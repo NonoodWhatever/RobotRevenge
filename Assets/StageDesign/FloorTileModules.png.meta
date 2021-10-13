@@ -65,6 +65,87 @@ TextureImporter:
   - first:
       213: 8272534835491714257
     second: FloorTileModules_20
+  - first:
+      213: -3712670008615072036
+    second: FloorTileModules_21
+  - first:
+      213: 2902378735241848899
+    second: FloorTileModules_22
+  - first:
+      213: -2247599339514607513
+    second: FloorTileModules_23
+  - first:
+      213: -8037866339018402233
+    second: FloorTileModules_24
+  - first:
+      213: 8499650427890568452
+    second: FloorTileModules_25
+  - first:
+      213: 8237306831991812205
+    second: FloorTileModules_26
+  - first:
+      213: -3178711918849284521
+    second: FloorTileModules_27
+  - first:
+      213: 8033506087425013592
+    second: FloorTileModules_28
+  - first:
+      213: -7471679869428368456
+    second: FloorTileModules_29
+  - first:
+      213: -6752742120035085996
+    second: FloorTileModules_30
+  - first:
+      213: -6373539677908108629
+    second: FloorTileModules_31
+  - first:
+      213: 1768461354400561898
+    second: FloorTileModules_32
+  - first:
+      213: 2197779387571274335
+    second: FloorTileModules_33
+  - first:
+      213: -2023512670790295345
+    second: FloorTileModules_34
+  - first:
+      213: -8605767943010276455
+    second: FloorTileModules_35
+  - first:
+      213: 8034345563685827032
+    second: FloorTileModules_36
+  - first:
+      213: -3633468908948328132
+    second: FloorTileModules_37
+  - first:
+      213: 4004596404930144870
+    second: FloorTileModules_38
+  - first:
+      213: -4225989774159164110
+    second: FloorTileModules_39
+  - first:
+      213: -9054725411385892055
+    second: FloorTileModules_40
+  - first:
+      213: -3583364536447352854
+    second: FloorTileModules_41
+  - first:
+      213: 5763213123629139895
+    second: FloorTileModules_42
+  - first:
+      213: -5265709847343893273
+    second: FloorTileModules_43
+  - first:
+      213: 7803451461532830437
+    second: FloorTileModules_44
+  - first:
+      213: -4028954625249156639
+    second: FloorTileModules_45
+  - first:
+      213: 5934900533379144195
+    second: FloorTileModules_46
+  - first:
+      213: -6470230502842668146
+    second: FloorTileModules_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,11 +186,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 2
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,11 +209,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -140,11 +221,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -152,11 +233,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -164,11 +245,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 2
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -181,8 +262,8 @@ TextureImporter:
       name: FloorTileModules_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 832
+        x: 16
+        y: 939
         width: 142
         height: 142
       alignment: 0
@@ -202,8 +283,8 @@ TextureImporter:
       name: FloorTileModules_1
       rect:
         serializedVersion: 2
-        x: 477
-        y: 832
+        x: 476
+        y: 941
         width: 142
         height: 142
       alignment: 0
@@ -223,8 +304,8 @@ TextureImporter:
       name: FloorTileModules_2
       rect:
         serializedVersion: 2
-        x: 621
-        y: 832
+        x: 627
+        y: 941
         width: 142
         height: 142
       alignment: 0
@@ -244,8 +325,8 @@ TextureImporter:
       name: FloorTileModules_3
       rect:
         serializedVersion: 2
-        x: 765
-        y: 832
+        x: 777
+        y: 933
         width: 142
         height: 142
       alignment: 0
@@ -265,8 +346,8 @@ TextureImporter:
       name: FloorTileModules_4
       rect:
         serializedVersion: 2
-        x: 908
-        y: 832
+        x: 927
+        y: 933
         width: 142
         height: 142
       alignment: 0
@@ -286,8 +367,8 @@ TextureImporter:
       name: FloorTileModules_5
       rect:
         serializedVersion: 2
-        x: 37
-        y: 688
+        x: 1080
+        y: 928
         width: 142
         height: 142
       alignment: 0
@@ -307,8 +388,8 @@ TextureImporter:
       name: FloorTileModules_6
       rect:
         serializedVersion: 2
-        x: 182
-        y: 689
+        x: 1236
+        y: 929
         width: 142
         height: 142
       alignment: 0
@@ -328,8 +409,8 @@ TextureImporter:
       name: FloorTileModules_7
       rect:
         serializedVersion: 2
-        x: 325
-        y: 689
+        x: 1399
+        y: 929
         width: 142
         height: 142
       alignment: 0
@@ -349,8 +430,8 @@ TextureImporter:
       name: FloorTileModules_8
       rect:
         serializedVersion: 2
-        x: 477
-        y: 688
+        x: 16
+        y: 785
         width: 142
         height: 142
       alignment: 0
@@ -370,8 +451,8 @@ TextureImporter:
       name: FloorTileModules_9
       rect:
         serializedVersion: 2
-        x: 621
-        y: 688
+        x: 171
+        y: 786
         width: 142
         height: 142
       alignment: 0
@@ -391,8 +472,8 @@ TextureImporter:
       name: FloorTileModules_10
       rect:
         serializedVersion: 2
-        x: 765
-        y: 688
+        x: 324
+        y: 786
         width: 142
         height: 142
       alignment: 0
@@ -412,8 +493,8 @@ TextureImporter:
       name: FloorTileModules_11
       rect:
         serializedVersion: 2
-        x: 908
-        y: 688
+        x: 476
+        y: 786
         width: 142
         height: 142
       alignment: 0
@@ -433,8 +514,8 @@ TextureImporter:
       name: FloorTileModules_12
       rect:
         serializedVersion: 2
-        x: 37
-        y: 544
+        x: 627
+        y: 786
         width: 142
         height: 142
       alignment: 0
@@ -454,8 +535,8 @@ TextureImporter:
       name: FloorTileModules_13
       rect:
         serializedVersion: 2
-        x: 182
-        y: 545
+        x: 777
+        y: 786
         width: 142
         height: 142
       alignment: 0
@@ -475,8 +556,8 @@ TextureImporter:
       name: FloorTileModules_14
       rect:
         serializedVersion: 2
-        x: 325
-        y: 545
+        x: 927
+        y: 779
         width: 142
         height: 142
       alignment: 0
@@ -496,8 +577,8 @@ TextureImporter:
       name: FloorTileModules_15
       rect:
         serializedVersion: 2
-        x: 477
-        y: 544
+        x: 1080
+        y: 780
         width: 142
         height: 142
       alignment: 0
@@ -517,8 +598,8 @@ TextureImporter:
       name: FloorTileModules_16
       rect:
         serializedVersion: 2
-        x: 621
-        y: 544
+        x: 1236
+        y: 780
         width: 142
         height: 142
       alignment: 0
@@ -538,8 +619,8 @@ TextureImporter:
       name: FloorTileModules_17
       rect:
         serializedVersion: 2
-        x: 37
-        y: 400
+        x: 1399
+        y: 780
         width: 142
         height: 142
       alignment: 0
@@ -559,8 +640,8 @@ TextureImporter:
       name: FloorTileModules_18
       rect:
         serializedVersion: 2
-        x: 477
-        y: 400
+        x: 16
+        y: 631
         width: 142
         height: 142
       alignment: 0
@@ -580,8 +661,8 @@ TextureImporter:
       name: FloorTileModules_19
       rect:
         serializedVersion: 2
-        x: 37
-        y: 255
+        x: 171
+        y: 632
         width: 142
         height: 142
       alignment: 0
@@ -601,8 +682,8 @@ TextureImporter:
       name: FloorTileModules_20
       rect:
         serializedVersion: 2
-        x: 187
-        y: 255
+        x: 324
+        y: 632
         width: 142
         height: 142
       alignment: 0
@@ -614,6 +695,573 @@ TextureImporter:
       bones: []
       spriteID: 1d437856a92fdc270800000000000000
       internalID: 8272534835491714257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_21
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 627
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde80483c42f97cc0800000000000000
+      internalID: -3712670008615072036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_22
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 628
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348ecbd0512574820800000000000000
+      internalID: 2902378735241848899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_23
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 628
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76844da1f4ceec0e0800000000000000
+      internalID: -2247599339514607513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_24
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 628
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7461dbea623c37090800000000000000
+      internalID: -8037866339018402233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_25
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 631
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d0a65f703d4f570800000000000000
+      internalID: 8499650427890568452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_26
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 631
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6035caabeac05270800000000000000
+      internalID: 8237306831991812205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_27
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 631
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75620b1f952f2e3d0800000000000000
+      internalID: -3178711918849284521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 477
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857f7e1293fbc7f60800000000000000
+      internalID: 8033506087425013592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_29
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 476
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbf843deb24f4890800000000000000
+      internalID: -7471679869428368456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_30
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 473
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4519d73c1d07942a0800000000000000
+      internalID: -6752742120035085996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_31
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 474
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baafd607e63ac87a0800000000000000
+      internalID: -6373539677908108629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_32
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 477
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea3d0c6b36da8810800000000000000
+      internalID: 1768461354400561898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_33
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 477
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f528cda65b4108e10800000000000000
+      internalID: 2197779387571274335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_34
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 477
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0ea0b62f90be3e0800000000000000
+      internalID: -2023512670790295345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_35
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 322
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bad61b6ab229880800000000000000
+      internalID: -8605767943010276455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_36
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 322
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ba3ee8babf7f60800000000000000
+      internalID: 8034345563685827032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_37
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 322
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3175bb3743539dc0800000000000000
+      internalID: -3633468908948328132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_38
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 322
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aeaa8863f239730800000000000000
+      internalID: 4004596404930144870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_39
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 306
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d4fcec0b44a55c0800000000000000
+      internalID: -4225989774159164110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 170
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92324ab5637275280800000000000000
+      internalID: -9054725411385892055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 170
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefb25880f4554ec0800000000000000
+      internalID: -3583364536447352854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_42
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 159
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7c8c61dcb0bff40800000000000000
+      internalID: 5763213123629139895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_43
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 159
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e47ac2fac07ce6b0800000000000000
+      internalID: -5265709847343893273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_44
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 159
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eacaa282cd6b4c60800000000000000
+      internalID: 7803451461532830437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_45
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 10
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e16bd95d174618c0800000000000000
+      internalID: -4028954625249156639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_46
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 10
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a175537900d5250800000000000000
+      internalID: 5934900533379144195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTileModules_47
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 10
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b6a2f63af1536a0800000000000000
+      internalID: -6470230502842668146
       vertices: []
       indices: 
       edges: []
