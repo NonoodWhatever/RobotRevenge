@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerShootingThing : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject BulletPrefabSelection;
+    public AudioSource Sound;
 
     public float bulletForce = 20f;
  
@@ -25,5 +27,6 @@ public class PlayerShootingThing : MonoBehaviour
        GameObject bullet = Instantiate(BulletPrefabSelection, firePoint.position, firePoint.rotation);
        Rigidbody2D PhysRB = bullet.GetComponent<Rigidbody2D>();
         PhysRB.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Sound.Play();
     }
 }
