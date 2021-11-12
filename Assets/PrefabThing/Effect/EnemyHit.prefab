@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3181181782832615876}
   - component: {fileID: 3181181782832615875}
   - component: {fileID: 3181181782832615874}
-  m_Layer: 0
+  - component: {fileID: 2452241822302320132}
+  m_Layer: 3
   m_Name: EnemyHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +43,7 @@ ParticleSystem:
   serializedVersion: 7
   lengthInSec: 0.5
   simulationSpeed: 2
-  stopAction: 2
+  stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -4804,3 +4805,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &2452241822302320132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3181181782832615873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a8a0951e3fc2c4899a898d2efd577b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itspool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}

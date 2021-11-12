@@ -32,6 +32,24 @@ TextureImporter:
   - first:
       213: 7769711343591390638
     second: CargoGiMilk
+  - first:
+      213: 7987672011225157892
+    second: Shelf
+  - first:
+      213: 7338928035166872117
+    second: ShelfFilled1
+  - first:
+      213: 2558839998985192603
+    second: ShelfFilled2
+  - first:
+      213: -3755247337901600181
+    second: MedBed
+  - first:
+      213: -1162079293281765977
+    second: Counter1
+  - first:
+      213: -7980727379657422166
+    second: Counter2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,7 +208,7 @@ TextureImporter:
       name: CarPlayer
       rect:
         serializedVersion: 2
-        x: 1245
+        x: 1246
         y: 99
         width: 170
         height: 197
@@ -350,6 +368,132 @@ TextureImporter:
       bones: []
       spriteID: ead76122d4f83db60800000000000000
       internalID: 7769711343591390638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelf
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 894
+        width: 267
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401d76baf59e9de60800000000000000
+      internalID: 7987672011225157892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShelfFilled1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 897
+        width: 267
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532e6482a2c19d560800000000000000
+      internalID: 7338928035166872117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShelfFilled2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 785
+        width: 267
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94c298fb63d28320800000000000000
+      internalID: 2558839998985192603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedBed
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 474
+        width: 119
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42d4ac317ea2ebc0800000000000000
+      internalID: -3755247337901600181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Counter1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 528
+        width: 145
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a57a1b2a077fdfe0800000000000000
+      internalID: -1162079293281765977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Counter2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 529
+        width: 144
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa094e5bb2ce3190800000000000000
+      internalID: -7980727379657422166
       vertices: []
       indices: 
       edges: []

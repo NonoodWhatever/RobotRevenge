@@ -103,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -185997713
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 702dc9c8f4d415341b0fa43bd6e62991, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -183,9 +183,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4abca75d4a8ae3b408dd087b80b075fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -265,9 +265,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6069f9def14c6264a9b1c29d833089b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 5390134827173210659}
   - component: {fileID: 5390134827173210657}
   - component: {fileID: 5390134827173210656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyMelee1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  deathEffect: {fileID: 8674546544588810679, guid: d2d5ef0d4089c5549bb331b430fd43b0, type: 3}
+  deathEffect: {fileID: 0}
 --- !u!114 &5390134827173210659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,9 +440,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 5390134827276951315}
   - component: {fileID: 5390134827276951313}
   - component: {fileID: 5390134827276951312}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BodyHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

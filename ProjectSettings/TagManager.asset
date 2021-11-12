@@ -9,19 +9,20 @@ TagManager:
   - YourBBullet
   - Enemy
   - Trigger
+  - Explosive
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Effect
   - Water
   - UI
   - Player
   - Trigger
-  - 
-  - 
-  - 
-  - 
+  - Bullet
+  - Enemy
+  - EnemyTrigger
+  - Explosive
   - 
   - 
   - 
