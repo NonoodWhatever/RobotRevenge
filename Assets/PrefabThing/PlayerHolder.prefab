@@ -27,8 +27,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7896098930983501535}
   - {fileID: 7896098929422256508}
+  - {fileID: 7896098930983501535}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64,7 +64,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8624804423155876360}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7896098930983501520
 Camera:
@@ -150,26 +150,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8624804423155876360}
     m_Modifications:
-    - target: {fileID: 6113434058370135, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
-    - target: {fileID: 1408828856800049527, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
-    - target: {fileID: 4118710575226498165, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
-    - target: {fileID: 8545097379931858216, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
-    - target: {fileID: 8545097379996356249, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
     - target: {fileID: 8545097380207122090, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: cam
       value: 
@@ -180,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -222,10 +202,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8545097381751770874, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
 --- !u!4 &7896098929422256508 stripped
