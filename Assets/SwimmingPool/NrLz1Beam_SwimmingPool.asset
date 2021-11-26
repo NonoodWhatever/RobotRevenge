@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: NrLz1Beam_Swimming
   _template: {fileID: 8129464795799852725, guid: 51f3e966550661741bd88b02ee356a56, type: 3}
   _defaultSize: 0
-  _maxSize: -1
+  _maxSize: 6
   _incrementalInstanceNames: 0
-  _autoInitialize: 0
+  _autoInitialize: 1
   _repopulateOnSceneChange: 0

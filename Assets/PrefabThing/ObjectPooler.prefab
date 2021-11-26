@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1941999515941499915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 669824624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7842ed8c58a43d46b240c512eb421c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Timer: 2
-  damage: 100
-  RPG: 0
---- !u!114 &1907872759859360215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553484602050653127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6fe41aeba20e6c4b9f7cfa5e7e495e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HitEffect: {fileID: 0}
-  Damage: 0
-  Explosion: {fileID: 8650223408176816021, guid: b44cddc4e62a5c146a539686355aaaa5, type: 3}
 --- !u!1 &8553484602075613111
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,15 +28,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6520607000848015850}
-  - {fileID: 8553484601729924278}
   - {fileID: 6643268759823905647}
   - {fileID: 1802718695515260534}
-  - {fileID: 8553484602520196862}
   - {fileID: 8553484601316720277}
-  - {fileID: 8553484602514351799}
+  - {fileID: 8553484602520196862}
+  - {fileID: 8553484601729924278}
   - {fileID: 8553484602050653125}
   - {fileID: 8553484602197742823}
   - {fileID: 8553484600825634361}
+  - {fileID: 8553484602514351799}
   - {fileID: 669824626}
   - {fileID: 2021246627}
   - {fileID: 973795470}
@@ -80,10 +50,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8553484602075613110}
     m_Modifications:
-    - target: {fileID: 1129433258132798321, guid: 51f3e966550661741bd88b02ee356a56, type: 3}
-      propertyPath: Explosion
-      value: 
-      objectReference: {fileID: 1870479200324913464, guid: 58e5f612ef6ea0d498011846cf55c9d4, type: 3}
     - target: {fileID: 8129464795799852723, guid: 51f3e966550661741bd88b02ee356a56, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -132,10 +98,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyRound1
       objectReference: {fileID: 0}
-    - target: {fileID: 8129464795799852725, guid: 51f3e966550661741bd88b02ee356a56, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f3e966550661741bd88b02ee356a56, type: 3}
 --- !u!4 &8553484602520196862 stripped
@@ -152,7 +114,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8674546544588810677, guid: d2d5ef0d4089c5549bb331b430fd43b0, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8674546544588810677, guid: d2d5ef0d4089c5549bb331b430fd43b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,10 +160,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dedlol
       objectReference: {fileID: 0}
-    - target: {fileID: 8674546544588810679, guid: d2d5ef0d4089c5549bb331b430fd43b0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2d5ef0d4089c5549bb331b430fd43b0, type: 3}
 --- !u!4 &8553484600825634361 stripped
@@ -219,14 +177,6 @@ PrefabInstance:
     - target: {fileID: 1870479200324913464, guid: 58e5f612ef6ea0d498011846cf55c9d4, type: 3}
       propertyPath: m_Name
       value: ExplodingERound1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1870479200324913464, guid: 58e5f612ef6ea0d498011846cf55c9d4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1870479200324913465, guid: 58e5f612ef6ea0d498011846cf55c9d4, type: 3}
-      propertyPath: Timer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1870479200324913467, guid: 58e5f612ef6ea0d498011846cf55c9d4, type: 3}
       propertyPath: m_RootOrder
@@ -288,7 +238,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4428206662656842248, guid: d2d16674948d77748aa3e75b402ef06e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4428206662656842248, guid: d2d16674948d77748aa3e75b402ef06e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,10 +284,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyRound34
       objectReference: {fileID: 0}
-    - target: {fileID: 9163106589636802324, guid: d2d16674948d77748aa3e75b402ef06e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2d16674948d77748aa3e75b402ef06e, type: 3}
 --- !u!4 &1802718695515260534 stripped
@@ -356,13 +302,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: AntiMechRound
       objectReference: {fileID: 0}
-    - target: {fileID: 6636413137093114473, guid: af903516a9cda7e479dfb1e1754199a5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6636413137093114479, guid: af903516a9cda7e479dfb1e1754199a5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6636413137093114479, guid: af903516a9cda7e479dfb1e1754199a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -404,10 +346,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7263339621305935076, guid: af903516a9cda7e479dfb1e1754199a5, type: 3}
-      propertyPath: Explosion
-      value: 
-      objectReference: {fileID: 5262653831945357969, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af903516a9cda7e479dfb1e1754199a5, type: 3}
 --- !u!4 &8553484601729924278 stripped
@@ -426,13 +364,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyRoundE
       objectReference: {fileID: 0}
-    - target: {fileID: 6526665431283076907, guid: 8378e2516a400d4408bc3d53d71e17fe, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6526665431283076910, guid: 8378e2516a400d4408bc3d53d71e17fe, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6526665431283076910, guid: 8378e2516a400d4408bc3d53d71e17fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,7 +424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4806274701218884224, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4806274701218884224, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,17 +470,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RPGRound2
       objectReference: {fileID: 0}
-    - target: {fileID: 4806274701218884226, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
---- !u!1 &8553484602050653127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4806274701218884226, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
-  m_PrefabInstance: {fileID: 3749041687274029381}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8553484602050653125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4806274701218884224, guid: 2fa216d82d54fcb4182a55fbc893515f, type: 3}
@@ -561,7 +486,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5663025104774677252, guid: d1e4c4e50121e404eb5b2307ad2daa00, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5663025104774677252, guid: d1e4c4e50121e404eb5b2307ad2daa00, type: 3}
       propertyPath: m_LocalPosition.x
@@ -607,10 +532,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyRound10
       objectReference: {fileID: 0}
-    - target: {fileID: 5663025104774677254, guid: d1e4c4e50121e404eb5b2307ad2daa00, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1e4c4e50121e404eb5b2307ad2daa00, type: 3}
 --- !u!4 &8553484601316720277 stripped
@@ -628,10 +549,6 @@ PrefabInstance:
     - target: {fileID: 5262653831945357969, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
       propertyPath: m_Name
       value: ExplodingAMRound
-      objectReference: {fileID: 0}
-    - target: {fileID: 5262653831945357969, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5262653831945357971, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
       propertyPath: m_RootOrder
@@ -679,11 +596,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
---- !u!1 &669824624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5262653831945357969, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
-  m_PrefabInstance: {fileID: 5262653832451538145}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &669824626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5262653831945357971, guid: 2a309dcaca6431641b7377652c7498c6, type: 3}
@@ -700,13 +612,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyHit
       objectReference: {fileID: 0}
-    - target: {fileID: 3181181782832615873, guid: b40afe53133c9f2409e9e61d5e1a1217, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3181181782832615876, guid: b40afe53133c9f2409e9e61d5e1a1217, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3181181782832615876, guid: b40afe53133c9f2409e9e61d5e1a1217, type: 3}
       propertyPath: m_LocalPosition.x
@@ -765,10 +673,6 @@ PrefabInstance:
     - target: {fileID: 3117194120946862830, guid: ef85900a86a91ec438cab7935696786f, type: 3}
       propertyPath: m_Name
       value: BallisticRound1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3117194120946862830, guid: ef85900a86a91ec438cab7935696786f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3227336455064679649, guid: ef85900a86a91ec438cab7935696786f, type: 3}
       propertyPath: m_RootOrder
@@ -832,10 +736,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExplodingRPG
       objectReference: {fileID: 0}
-    - target: {fileID: 8650223408176816021, guid: b44cddc4e62a5c146a539686355aaaa5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8650223408176816023, guid: b44cddc4e62a5c146a539686355aaaa5, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -896,7 +796,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2411507491176741190, guid: 09f39971afb662446bde8892c805f17d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2411507491176741190, guid: 09f39971afb662446bde8892c805f17d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,10 +841,6 @@ PrefabInstance:
     - target: {fileID: 3711251045639792374, guid: 09f39971afb662446bde8892c805f17d, type: 3}
       propertyPath: m_Name
       value: ShotgunPellet
-      objectReference: {fileID: 0}
-    - target: {fileID: 3711251045639792374, guid: 09f39971afb662446bde8892c805f17d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f39971afb662446bde8892c805f17d, type: 3}

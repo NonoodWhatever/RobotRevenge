@@ -102,7 +102,7 @@ MonoBehaviour:
   Auto: 1
   SecondPerBullet: 0.15
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &198719667094308587
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +262,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -399,12 +399,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8689490314829328044}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 7cbdd623de8b3be4e872d6bea75d6c1a, type: 2}
   Sound: {fileID: 6075615683137762879}
   Auto: 1
   SecondPerBullet: 0.1
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &606393712212271190
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,12 +584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6286250556852007593}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 2238182750193491675}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &663221986603638807
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -804,7 +804,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -931,7 +931,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1058,7 +1058,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1195,12 +1195,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6927541886580900315}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   Sound: {fileID: 8282672415155228435}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 1
-  bulletForce: 20
+  bulletForce: 80
 --- !u!1 &2354404868916818209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &3255545630815641086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1727,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   Auto: 1
   SecondPerBullet: 0.2
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &5495571904830122509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,12 +2395,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6282509652515676008}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 9fe0f4a114ec70443b98e96b5da267a4, type: 2}
   Sound: {fileID: 2882763458660831456}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &6330177656794987975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,7 +2488,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2625,12 +2625,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2555839026920582489}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 6340277910799940430}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &6895889039478000183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,12 +2728,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4606683184457673486}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 5167154198780388889}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 1
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &6941978610175256033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,7 +2948,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3075,7 +3075,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3202,7 +3202,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3329,7 +3329,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3466,12 +3466,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2352673561166405029}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 8712769440191796825}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &7624578886106645299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,12 +3569,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1186396482308548031}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 9fe0f4a114ec70443b98e96b5da267a4, type: 2}
   Sound: {fileID: 761593375426068420}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &7644009720007161815
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,12 +3672,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6144300605141274601}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   Sound: {fileID: 1896620666107465911}
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 1
-  bulletForce: 20
+  bulletForce: 80
 --- !u!1 &7753992949055381141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,7 +3765,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3985,12 +3985,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 7751039151075846330}
-  bulletPool: {fileID: 0}
+  bulletPool: {fileID: 11400000, guid: 7cbdd623de8b3be4e872d6bea75d6c1a, type: 2}
   Sound: {fileID: 2107093631949905068}
   Auto: 1
   SecondPerBullet: 0.1
   Shotgun: 0
-  bulletForce: 20
+  bulletForce: 40
 --- !u!1 &8176160730804608405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,7 +4078,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4205,7 +4205,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4347,7 +4347,7 @@ MonoBehaviour:
   Auto: 1
   SecondPerBullet: 0.2
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &8545097379996356254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4450,7 +4450,7 @@ MonoBehaviour:
   Auto: 0
   SecondPerBullet: 10
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &8545097380110243980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4818,7 +4818,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4983,7 +4983,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5125,7 +5125,7 @@ MonoBehaviour:
   Auto: 1
   SecondPerBullet: 0.15
   Shotgun: 0
-  bulletForce: 50
+  bulletForce: 80
 --- !u!1 &9090461818462914676
 GameObject:
   m_ObjectHideFlags: 0

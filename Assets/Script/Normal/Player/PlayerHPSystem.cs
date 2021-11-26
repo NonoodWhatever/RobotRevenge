@@ -15,18 +15,29 @@ public class PlayerHPSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Playerhealth += damage;
-
+        PlayerUITracker.instance.PlayerHPUIUpdate(Playerhealth);
         if (Playerhealth <= 0)
         {
             GameOver();
         }
     }
     void GameOver()
-    {
-        DeadMessage1.SetActive(true);
-        DeadMessage2.SetActive(true);
-        DeadMessage3.SetActive(true);
-        DeadMessage4.SetActive(true);
+    {if (DeadMessage1 != null)
+        {
+            DeadMessage1.SetActive(true);
+        }
+   if (DeadMessage2 != null)
+        {
+            DeadMessage2.SetActive(true);
+        }
+     if   (DeadMessage3 != null)
+        {
+            DeadMessage3.SetActive(true);
+        }
+       if (DeadMessage4 != null)
+        {
+            DeadMessage4.SetActive(true);
+        }
         print("ded");
         Player.SetActive(false);
 

@@ -5,12 +5,12 @@ using UnityEngine;
 public class WeaponSelectionSystem : MonoBehaviour
 {
     [SerializeField]
-    GameObject[] WeaponsSlot1;
+    public GameObject[] WeaponsSlot1;
     [SerializeField]
-    GameObject[] WeaponsSlot2;
+    public GameObject[] WeaponsSlot2;
     [SerializeField]
-    GameObject[] GrenadesSlot;
-    public GameObject[] SPWeaponsSlot;
+    public GameObject[] GrenadesSlot;
+    [SerializeField] public GameObject[] SPWeaponsSlot;
 
 
     void Start()

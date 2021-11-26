@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: NrLz3-4_Swimming
   _template: {fileID: 9163106589636802324, guid: d2d16674948d77748aa3e75b402ef06e, type: 3}
   _defaultSize: 0
-  _maxSize: -1
+  _maxSize: 6
   _incrementalInstanceNames: 0
-  _autoInitialize: 0
+  _autoInitialize: 1
   _repopulateOnSceneChange: 0

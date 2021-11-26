@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad40add42ecce646952aaa9475056c8, type: 3}
   m_Name: BulletPellet_SwimmingPool
   m_EditorClassIdentifier: 
-  _name: 
-  _template: {fileID: 0}
+  _name: BulletPellet_Swimming
+  _template: {fileID: 3711251045639792374, guid: 09f39971afb662446bde8892c805f17d, type: 3}
   _defaultSize: 0
-  _maxSize: -1
+  _maxSize: 9
   _incrementalInstanceNames: 0
-  _autoInitialize: 0
+  _autoInitialize: 1
   _repopulateOnSceneChange: 0

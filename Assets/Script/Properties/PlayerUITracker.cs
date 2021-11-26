@@ -15,19 +15,31 @@ public class PlayerUITracker : MonoBehaviour
     TMP_Text HPCheck;
     [SerializeField]
     TMP_Text Objective;
-
+    [SerializeField]
+    Slider Ammo;
+    [SerializeField]
+    TMP_Text EToActivate;
+    bool EisOnactive;
     int Health;
    public void PlayerHPUIUpdate(int healthchange)
     {
         Health = healthchange;
         HPCheck.text = "Hit Point:" + Health;
     }
-    public void PlayerAmmoUIUpdate(int ammotochange)
+    public void PlayerAmmoUIUpdate(int ammotochange, int ammoMax)
     {
-
+        Ammo.maxValue = ammoMax;
+        Ammo.value = ammotochange;
     }
     public void ObjectiveUIUpdate(Text thingTochange)
     {
         Objective.text = "Objective:" + thingTochange;
+    }
+    public void PressEtoPickup(bool SetActiveYN)
+    {
+        if(SetActiveYN = true)
+        {
+            EisOnactive = true;
+        }
     }
 }

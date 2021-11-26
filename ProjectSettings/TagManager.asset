@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Trigger
   - Explosive
+  - Gun
+  - EnemyShield
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - Enemy
   - EnemyTrigger
   - Explosive
-  - 
+  - EnemyBullet
   - 
   - 
   - 

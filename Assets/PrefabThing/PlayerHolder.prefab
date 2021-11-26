@@ -143,6 +143,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8616d8450517b44e84972bdfb8d2436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1501749995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459137088065303420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1995338100873956666}
+  bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
+  Sound: {fileID: 8545097380253473800}
+  Auto: 1
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.2
+  ReloadTimeMinimum: 0
+  RechargeTime: 1
+  MaxAmmo: 999999999
+  CurrentAmmo: 30
+  bulletForce: 50
 --- !u!1001 &1946360908197634003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,6 +174,366 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8624804423155876360}
     m_Modifications:
+    - target: {fileID: 6113434058370135, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113434058370135, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 20518982273261941, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 20518982273261941, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 20518982273261941, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20518982273261941, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 20518982273261941, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54277299552685722, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 554203338348608871, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 606393712212271190, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 627702730663095460, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408828856800049527, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408828856800049527, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408828856800049527, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408828856800049527, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799586496852201382, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799586496852201382, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799586496852201382, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035893170045719064, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354404868916818209, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009927009369659666, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009927009369659666, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009927009369659666, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241786712042026081, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241786712042026081, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241786712042026081, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241786712042026081, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241786712042026081, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Shotgun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246291916958128187, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704047431031198468, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118710575226498165, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118710575226498165, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118710575226498165, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118710575226498165, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477765250812654155, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604267175321899143, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604267175321899143, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246790051131619629, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346865860832574319, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404367903822973575, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495571904830122509, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100942224290113665, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100942224290113665, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100942224290113665, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100942224290113665, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351711096379030669, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351711096379030669, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351711096379030669, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351711096379030669, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577845918616833480, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895889039478000183, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100928458406645036, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100928458406645036, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100928458406645036, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100928458406645036, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475728417456688533, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475728417456688533, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475728417456688533, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475728417456688533, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: RechargeTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475728417456688533, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499382311211496794, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624578886106645299, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7644009720007161815, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955108137301011631, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955108137301011631, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070790419440645105, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100904076483879271, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100904076483879271, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100904076483879271, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: EnergyGun
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100904076483879271, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: GrenadesSlot.Array.data[0]
+      value: 
+      objectReference: {fileID: 7288251583369336743}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: GrenadesSlot.Array.data[1]
+      value: 
+      objectReference: {fileID: 6040043087207819006}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: GrenadesSlot.Array.data[2]
+      value: 
+      objectReference: {fileID: 1398520728405606277}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: GrenadesSlot.Array.data[3]
+      value: 
+      objectReference: {fileID: 2910934410595634391}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: SPWeaponsSlot.Array.data[0]
+      value: 
+      objectReference: {fileID: 2677085596078648728}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: SPWeaponsSlot.Array.data[1]
+      value: 
+      objectReference: {fileID: 2659226557312012116}
+    - target: {fileID: 8384808520647860181, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: SPWeaponsSlot.Array.data[2]
+      value: 
+      objectReference: {fileID: 8459137088065303420}
+    - target: {fileID: 8545097379931858216, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379931858216, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379931858221, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379996356249, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379996356249, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379996356249, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379996356249, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097379996356254, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122090, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: cam
       value: 
@@ -164,11 +548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.738
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -202,10 +586,79 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8545097381751770872, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097381751770874, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Ammo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097381751770874, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: MaxAmmo
+      value: 151
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097381751770874, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545097381751770874, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: ReloadTimeMinimum
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090461818462914676, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
 --- !u!4 &7896098929422256508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545097380207122095, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7288251583369336743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9090461818462914676, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6040043087207819006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246790051131619629, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1398520728405606277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 606393712212271190, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2910934410595634391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3704047431031198468, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2677085596078648728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4477765250812654155, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2659226557312012116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4604267175321899143, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8459137088065303420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7955108137301011631, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1995338100873956666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 50104200972374761, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+  m_PrefabInstance: {fileID: 1946360908197634003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8545097380253473800 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7896098929714037723, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
   m_PrefabInstance: {fileID: 1946360908197634003}
   m_PrefabAsset: {fileID: 0}

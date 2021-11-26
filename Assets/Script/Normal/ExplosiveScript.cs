@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFSW.MOP2;
 
 public class ExplosiveScript : MonoBehaviour
 {
-    public float Timer = 0.05f;
+    [SerializeField] ObjectPool itspool;
+    float Timer = 0.1f;
     [SerializeField]
     int damage = 5;
     public bool RPG = false;
-    
+    public bool Exploder = false;
+    private void OnEnable()
+    {
+        Timer = 0.25f;
+    }
     private void Update()
     {
         if (Timer <= 0)
         {
-            Destroy(gameObject);
+            itspool.Release(gameObject);
         }
         else
         {
@@ -31,8 +37,20 @@ public class ExplosiveScript : MonoBehaviour
           }
             else
           {
-                enemy.TakeDamage(1000);
+                enemy.TakeDamage(10000);
           }
+        }
+        if(Exploder == true || RPG == true)
+        {
+            PlayerHPSystem player = collision.GetComponent<PlayerHPSystem>();
+            if(player != null && Timer > 0)
+            {
+                player.TakeDamage(5);
+            }
+            if(enemy!= null && Timer > 0)
+            {
+                enemy.TakeDamage(damage);
+            }
         }
     }
 }

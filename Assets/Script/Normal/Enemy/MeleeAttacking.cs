@@ -14,7 +14,6 @@ public class MeleeAttacking : MonoBehaviour
         PlayerHPSystem Player = collision.GetComponent<PlayerHPSystem>();
         if (Player != null)
         {
-            
             Player.TakeDamage(-ouchpoint);
             print("ouch");
             if (MoveCheck.JustAttacked == false) {

@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6526665431283076910}
   - component: {fileID: 6526665431283076905}
   - component: {fileID: 6526665431283076904}
-  - component: {fileID: 658219474}
-  m_Layer: 8
+  - component: {fileID: 5887862481968587465}
+  - component: {fileID: 949457958984258064}
+  m_Layer: 12
   m_Name: EnergyRoundE
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6526665431283076907}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.046, y: 3.214, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6526665431283076905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70,9 +71,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1d9cd073563f2d544a042c20f351d24b, type: 3}
   m_Color: {r: 0.7028302, g: 0.89045495, b: 1, a: 1}
   m_FlipX: 0
@@ -105,7 +106,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &658219474
+--- !u!114 &5887862481968587465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,8 +115,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 6526665431283076907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbea3f8127a77f24489ce150e13b1ce8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3216e710241b10c4fab983a236afcf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitEffect: {fileID: 0}
-  Damage: 0
+  SelfPool: {fileID: 11400000, guid: 0ebb21d42b0ca3647909a6f3b32fd0ca, type: 2}
+  HitEffectPool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}
+  Damage: 1
+--- !u!70 &949457958984258064
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6526665431283076907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.14460135}
+  m_Size: {x: 0.23446369, y: 0.45221615}
+  m_Direction: 0

@@ -9,15 +9,15 @@ public class Bullet_Ballistic : MonoBehaviour
     public int Damage;
     [SerializeField] ObjectPool itspool;
     [SerializeField] ObjectPool effectPool;
-    private float DelayBeforeDestroy = 30.0f;
+    private float DelayBeforeDestroy = 45.0f;
     private float DelayBeforeStopEffect = 0.5f;
     
     private void Update()
     {
         DelayBeforeDestroy -= Time.deltaTime;
         DelayBeforeStopEffect-= Time.deltaTime;
-        if (DelayBeforeDestroy <= 0)
-       {
+       if (DelayBeforeDestroy <= 0)
+      {
             //Destroy(gameObject);
             itspool.Release(gameObject);
        }
@@ -30,7 +30,7 @@ public class Bullet_Ballistic : MonoBehaviour
     {
         GameObject effect = effectPool.GetObject(transform.position, transform.rotation);
         EnemyHPSystem enemy = collision.GetComponent<EnemyHPSystem>();
-        if(enemy != null)
+        if(enemy != null && enemy.tag != "EnemyShield")
         {
             enemy.TakeDamage(Damage);
         }

@@ -10,7 +10,7 @@ public class MeleeMovementBehavior : MonoBehaviour
     private Vector2 movement;
     public bool JustAttacked = false;
     public float Timer = 0f;
-
+   
     private void Start()
     {
         RBPhys = this.GetComponent<Rigidbody2D>();
@@ -23,7 +23,7 @@ public class MeleeMovementBehavior : MonoBehaviour
             Vector3 direction = player.transform.position - transform.position;
             //  Debug.Log(direction);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            RBPhys.rotation = angle;
+          RBPhys.rotation = angle;
             direction.Normalize();
             movement = direction;
         }
