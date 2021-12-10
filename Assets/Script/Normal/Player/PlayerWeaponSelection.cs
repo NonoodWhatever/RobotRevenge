@@ -10,10 +10,19 @@ public class PlayerWeaponSelection : MonoBehaviour
     public GameObject PlayerWeaponMelee;
     public GameObject Grenade;
     public GameObject WeaponSP;
-
+    private void Awake()
+    {
+        PlayerNonMelee.SetActive(true);
+        Weapon1.SetActive(true);
+        Weapon2.SetActive(true);
+        Grenade.SetActive(true);
+    }
     void Start()
     {
-        
+        PlayerNonMelee.SetActive(true);
+        Weapon1.SetActive(true);
+        Weapon2.SetActive(false);
+        Grenade.SetActive(false);
     }
 
     // Update is called once per frame

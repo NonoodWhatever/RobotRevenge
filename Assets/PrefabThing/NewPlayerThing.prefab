@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1408828856800049527}
   m_Layer: 0
   m_Name: ATKBELT_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7664984364645899228
 Transform:
   m_ObjectHideFlags: 0
@@ -100,8 +100,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 5462265825741069935}
   Auto: 1
-  SecondPerBullet: 0.15
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.15
+  ReloadTimeMinimum: 4
+  RechargeTime: 1
+  MaxAmmo: 151
+  CurrentAmmo: 100
   bulletForce: 80
 --- !u!1 &198719667094308587
 GameObject:
@@ -118,7 +123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1154406853238818606
 Transform:
   m_ObjectHideFlags: 0
@@ -156,7 +161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1577396523420505858
 Transform:
   m_ObjectHideFlags: 0
@@ -315,7 +320,7 @@ GameObject:
   - component: {fileID: 6351711096379030669}
   m_Layer: 0
   m_Name: NrLz-10_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,8 +407,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 7cbdd623de8b3be4e872d6bea75d6c1a, type: 2}
   Sound: {fileID: 6075615683137762879}
   Auto: 1
-  SecondPerBullet: 0.1
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 0.1
+  ReloadTimeMinimum: 2
+  RechargeTime: 0.25
+  MaxAmmo: 30
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &606393712212271190
 GameObject:
@@ -415,13 +425,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4695831508865934944}
   - component: {fileID: 7567177090784472542}
+  - component: {fileID: 1057791764}
   m_Layer: 0
   m_Name: NrGn-3-1_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4695831508865934944
 Transform:
   m_ObjectHideFlags: 0
@@ -487,6 +498,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1057791764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606393712212271190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPool: {fileID: 0}
+  Sound: {fileID: 0}
+  Auto: 0
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 30
+  CurrentAmmo: 0
+  bulletForce: 20
 --- !u!1 &627702730663095460
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +535,7 @@ GameObject:
   - component: {fileID: 3241786712042026081}
   m_Layer: 0
   m_Name: NrLz-3_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,8 +622,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 2238182750193491675}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 0.5
+  RechargeTime: 0.5
+  MaxAmmo: 10
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &663221986603638807
 GameObject:
@@ -1111,7 +1151,7 @@ GameObject:
   - component: {fileID: 3009927009369659666}
   m_Layer: 0
   m_Name: Buzz_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,8 +1238,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   Sound: {fileID: 8282672415155228435}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 1
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 0.15
+  RechargeTime: 1
+  MaxAmmo: 6
+  CurrentAmmo: 0
   bulletForce: 80
 --- !u!1 &2354404868916818209
 GameObject:
@@ -1214,7 +1259,7 @@ GameObject:
   - component: {fileID: 4118710575226498165}
   m_Layer: 0
   m_Name: FALI_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1301,8 +1346,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 7418392461855366834}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 1.5
+  RechargeTime: 1
+  MaxAmmo: 21
+  CurrentAmmo: 20
   bulletForce: 80
 --- !u!1 &3255545630815641086
 GameObject:
@@ -1441,13 +1491,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3353294999200184688}
   - component: {fileID: 1069870226451831713}
+  - component: {fileID: 83234891}
   m_Layer: 0
   m_Name: NrGn-3-2_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3353294999200184688
 Transform:
   m_ObjectHideFlags: 0
@@ -1513,6 +1564,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &83234891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704047431031198468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPool: {fileID: 0}
+  Sound: {fileID: 0}
+  Auto: 0
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 30
+  CurrentAmmo: 0
+  bulletForce: 20
 --- !u!1 &4073137125669261420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1854,7 @@ GameObject:
   - component: {fileID: 7456822523072665309}
   m_Layer: 0
   m_Name: CrAM-1_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1865,7 +1940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2191434642130153068
 Transform:
   m_ObjectHideFlags: 0
@@ -1895,11 +1970,11 @@ GameObject:
   - component: {fileID: 4706919661085355899}
   m_Layer: 0
   m_Name: RPGL_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8569621844074815995
 Transform:
   m_ObjectHideFlags: 0
@@ -1976,9 +2051,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8503382563147979286}
   - component: {fileID: 2561332903828861561}
+  - component: {fileID: 727816775}
   m_Layer: 0
   m_Name: Molotov_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2048,6 +2124,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &727816775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246790051131619629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPool: {fileID: 0}
+  Sound: {fileID: 0}
+  Auto: 0
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 30
+  CurrentAmmo: 0
+  bulletForce: 20
 --- !u!1 &5346865860832574319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,7 +2162,7 @@ GameObject:
   - component: {fileID: 959828766}
   m_Layer: 0
   m_Name: NewPlayer_wCrowbar
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2208,7 +2308,7 @@ GameObject:
   - component: {fileID: 6113434058370135}
   m_Layer: 0
   m_Name: ATKMAG_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2295,8 +2395,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 4267514973103186402}
   Auto: 1
-  SecondPerBullet: 0.2
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.2
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 31
+  CurrentAmmo: 30
   bulletForce: 80
 --- !u!1 &5495571904830122509
 GameObject:
@@ -2311,11 +2416,11 @@ GameObject:
   - component: {fileID: 8100904076483879271}
   m_Layer: 0
   m_Name: NrLz-1_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3624060981216986300
 Transform:
   m_ObjectHideFlags: 0
@@ -2398,8 +2503,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 9fe0f4a114ec70443b98e96b5da267a4, type: 2}
   Sound: {fileID: 2882763458660831456}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 1
+  RechargeTime: 1
+  MaxAmmo: 10
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &6330177656794987975
 GameObject:
@@ -2541,7 +2651,7 @@ GameObject:
   - component: {fileID: 3246291916958128187}
   m_Layer: 0
   m_Name: NrLz-4_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2628,8 +2738,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 6340277910799940430}
   Auto: 0
+  Shotgun: 1
+  EnergyGun: 1
   SecondPerBullet: 10
-  Shotgun: 0
+  ReloadTimeMinimum: 1
+  RechargeTime: 0.75
+  MaxAmmo: 4
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &6895889039478000183
 GameObject:
@@ -2644,7 +2759,7 @@ GameObject:
   - component: {fileID: 20518982273261941}
   m_Layer: 0
   m_Name: NrLz-4_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2731,8 +2846,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 5167154198780388889}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 1
+  EnergyGun: 1
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 1
+  RechargeTime: 0.75
+  MaxAmmo: 4
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &6941978610175256033
 GameObject:
@@ -3382,7 +3502,7 @@ GameObject:
   - component: {fileID: 7475728417456688533}
   m_Layer: 0
   m_Name: NrLz-3_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3469,8 +3589,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 69f10935866c17b459112b43d90996b2, type: 2}
   Sound: {fileID: 8712769440191796825}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 0.5
+  RechargeTime: 0.5
+  MaxAmmo: 10
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &7624578886106645299
 GameObject:
@@ -3485,7 +3610,7 @@ GameObject:
   - component: {fileID: 6100942224290113665}
   m_Layer: 0
   m_Name: NrLz-1_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3572,8 +3697,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 9fe0f4a114ec70443b98e96b5da267a4, type: 2}
   Sound: {fileID: 761593375426068420}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 1
+  RechargeTime: 1
+  MaxAmmo: 10
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &7644009720007161815
 GameObject:
@@ -3588,7 +3718,7 @@ GameObject:
   - component: {fileID: 1799586496852201382}
   m_Layer: 0
   m_Name: Buzz_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3675,8 +3805,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   Sound: {fileID: 1896620666107465911}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 1
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 0.15
+  RechargeTime: 1
+  MaxAmmo: 6
+  CurrentAmmo: 0
   bulletForce: 80
 --- !u!1 &7753992949055381141
 GameObject:
@@ -3815,9 +3950,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7367387511095376553}
   - component: {fileID: 2162063813277120238}
+  - component: {fileID: 1501749995}
   m_Layer: 0
   m_Name: FuNFAiL_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3888,6 +4024,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1501749995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7955108137301011631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 50104200972374761}
+  bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
+  Sound: {fileID: 7896098929714037723}
+  Auto: 1
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.2
+  ReloadTimeMinimum: 0
+  RechargeTime: 1
+  MaxAmmo: 999999999
+  CurrentAmmo: 30
+  bulletForce: 50
 --- !u!1 &8070790419440645105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,7 +4061,7 @@ GameObject:
   - component: {fileID: 7100928458406645036}
   m_Layer: 0
   m_Name: NrLz-10_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3988,8 +4148,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 7cbdd623de8b3be4e872d6bea75d6c1a, type: 2}
   Sound: {fileID: 2107093631949905068}
   Auto: 1
-  SecondPerBullet: 0.1
   Shotgun: 0
+  EnergyGun: 1
+  SecondPerBullet: 0.1
+  ReloadTimeMinimum: 2
+  RechargeTime: 0.25
+  MaxAmmo: 30
+  CurrentAmmo: 0
   bulletForce: 40
 --- !u!1 &8176160730804608405
 GameObject:
@@ -4258,7 +4423,7 @@ GameObject:
   - component: {fileID: 8545097379931858216}
   m_Layer: 0
   m_Name: ATKMAG_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4345,8 +4510,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 325950272}
   Auto: 1
-  SecondPerBullet: 0.2
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.2
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 31
+  CurrentAmmo: 30
   bulletForce: 80
 --- !u!1 &8545097379996356254
 GameObject:
@@ -4361,7 +4531,7 @@ GameObject:
   - component: {fileID: 8545097379996356249}
   m_Layer: 0
   m_Name: FALI_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4448,8 +4618,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 1053530853}
   Auto: 0
-  SecondPerBullet: 10
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 1.5
+  RechargeTime: 1
+  MaxAmmo: 21
+  CurrentAmmo: 20
   bulletForce: 80
 --- !u!1 &8545097380110243980
 GameObject:
@@ -4560,7 +4735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8545097380207122095
 Transform:
   m_ObjectHideFlags: 0
@@ -4707,30 +4882,38 @@ MonoBehaviour:
   WeaponsSlot1:
   - {fileID: 8545097379996356254}
   - {fileID: 2035893170045719064}
+  - {fileID: 7499382311211496794}
+  - {fileID: 6895889039478000183}
   - {fileID: 8545097379931858221}
+  - {fileID: 5495571904830122509}
+  - {fileID: 8070790419440645105}
   - {fileID: 8545097381751770872}
-  - {fileID: 627702730663095460}
-  - {fileID: 6577845918616833480}
-  - {fileID: 7624578886106645299}
-  - {fileID: 554203338348608871}
+  WeaponSlot1Index: 0
   WeaponsSlot2:
   - {fileID: 2354404868916818209}
   - {fileID: 7644009720007161815}
-  - {fileID: 5404367903822973575}
-  - {fileID: 54277299552685722}
   - {fileID: 627702730663095460}
   - {fileID: 6577845918616833480}
+  - {fileID: 5404367903822973575}
   - {fileID: 7624578886106645299}
   - {fileID: 554203338348608871}
+  - {fileID: 54277299552685722}
+  WeaponSlot2Index: 1
   GrenadesSlot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5246790051131619629}
+  - {fileID: 606393712212271190}
+  - {fileID: 3704047431031198468}
+  - {fileID: 9090461818462914676}
+  GrenadesSlotIndex: 0
   SPWeaponsSlot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4477765250812654155}
+  - {fileID: 4604267175321899143}
+  - {fileID: 7955108137301011631}
+  SPWeaponsSlotIndex: 1
+  WeaponSelection1DD: {fileID: 0}
+  WeaponSelection2DD: {fileID: 0}
+  GrenadeSelectionDD: {fileID: 0}
+  WholeWeaponSelection: {fileID: 0}
 --- !u!1 &8545097380574136113
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,7 +5219,7 @@ GameObject:
   - component: {fileID: 8545097381751770874}
   m_Layer: 0
   m_Name: ATKBELT_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5123,8 +5306,13 @@ MonoBehaviour:
   bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
   Sound: {fileID: 325950273}
   Auto: 1
-  SecondPerBullet: 0.15
   Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 0.15
+  ReloadTimeMinimum: 4
+  RechargeTime: 1
+  MaxAmmo: 151
+  CurrentAmmo: 100
   bulletForce: 80
 --- !u!1 &9090461818462914676
 GameObject:
@@ -5136,13 +5324,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3184402961169375421}
   - component: {fileID: 6494925178467321681}
+  - component: {fileID: 461952980}
   m_Layer: 0
   m_Name: ATGrenade_Player
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3184402961169375421
 Transform:
   m_ObjectHideFlags: 0
@@ -5208,3 +5397,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &461952980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090461818462914676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c4b6917a7a331498643155426233f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPool: {fileID: 0}
+  Sound: {fileID: 0}
+  Auto: 0
+  Shotgun: 0
+  EnergyGun: 0
+  SecondPerBullet: 10
+  ReloadTimeMinimum: 2
+  RechargeTime: 1
+  MaxAmmo: 30
+  CurrentAmmo: 0
+  bulletForce: 20

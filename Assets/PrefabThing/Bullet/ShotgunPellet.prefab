@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 5
-  itspool: {fileID: 0}
-  effectPool: {fileID: 0}
+  itspool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
+  effectPool: {fileID: 11400000, guid: aa70ab6f8cdec3846ae6286acfe37083, type: 2}
 --- !u!61 &3062489445017298728
 BoxCollider2D:
   m_ObjectHideFlags: 0
