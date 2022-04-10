@@ -10,6 +10,7 @@ public class EnemyHPSystem : MonoBehaviour
     //public GameObject deathEffect;
     [SerializeField] ObjectPool Explosive;
     [SerializeField] ObjectPool DeathEffectyPool;
+    [SerializeField] GameObject Self;
 
     public void TakeDamage(int damage)
     {
@@ -24,10 +25,21 @@ public class EnemyHPSystem : MonoBehaviour
     void Ded()
     {
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
-        DeathEffectyPool.GetObject(transform.position, Quaternion.identity);
+        if (DeathEffectyPool != null)
+        {
+            DeathEffectyPool.GetObject(transform.position, Quaternion.identity);
+        }
         if(Explosive != null)
         {
-            Explosive.GetObject();
+            Explosive.GetObject(transform.position, Quaternion.identity);
+        }
+        if (Self != null)
+        {
+            OnDeathTrigger Trig = Self.GetComponent<OnDeathTrigger>();
+            if (Trig != null)
+            {
+                Trig.Destroyed();
+            }
         }
         Destroy(gameObject);
     }

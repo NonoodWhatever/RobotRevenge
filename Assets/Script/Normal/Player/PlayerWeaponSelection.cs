@@ -15,14 +15,14 @@ public class PlayerWeaponSelection : MonoBehaviour
         PlayerNonMelee.SetActive(true);
         Weapon1.SetActive(true);
         Weapon2.SetActive(true);
-        Grenade.SetActive(true);
+    //    Grenade.SetActive(true);
     }
     void Start()
     {
         PlayerNonMelee.SetActive(true);
         Weapon1.SetActive(true);
         Weapon2.SetActive(false);
-        Grenade.SetActive(false);
+     //   Grenade.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class PlayerWeaponSelection : MonoBehaviour
             Weapon1.SetActive(true);
             Weapon2.SetActive(false);
             PlayerWeaponMelee.SetActive(false);
-            Grenade.SetActive(false);
+      //      Grenade.SetActive(false);
             WeaponSP.SetActive(false);
         }
         if (Input.GetKey(KeyCode.Alpha2))
@@ -43,7 +43,7 @@ public class PlayerWeaponSelection : MonoBehaviour
             Weapon1.SetActive(false);
             Weapon2.SetActive(true);
             PlayerWeaponMelee.SetActive(false);
-            Grenade.SetActive(false);
+        //    Grenade.SetActive(false);
             WeaponSP.SetActive(false);
         }
         if (Input.GetKey(KeyCode.Alpha3))
@@ -52,7 +52,7 @@ public class PlayerWeaponSelection : MonoBehaviour
             Weapon1.SetActive(false);
             Weapon2.SetActive(false);
             PlayerWeaponMelee.SetActive(true);
-            Grenade.SetActive(false);
+          //  Grenade.SetActive(false);
             WeaponSP.SetActive(false);
         }
         if (Input.GetKey(KeyCode.Alpha4))
@@ -61,7 +61,7 @@ public class PlayerWeaponSelection : MonoBehaviour
             Weapon1.SetActive(false);
             Weapon2.SetActive(false);
             PlayerWeaponMelee.SetActive(false);
-            Grenade.SetActive(true);
+           // Grenade.SetActive(true);
             WeaponSP.SetActive(false);
         }
         if (Input.GetKey(KeyCode.Alpha5))
@@ -70,7 +70,7 @@ public class PlayerWeaponSelection : MonoBehaviour
             Weapon1.SetActive(false);
             Weapon2.SetActive(false);
             PlayerWeaponMelee.SetActive(false);
-            Grenade.SetActive(false);
+         //   Grenade.SetActive(false);
             WeaponSP.SetActive(true);
         }
     }

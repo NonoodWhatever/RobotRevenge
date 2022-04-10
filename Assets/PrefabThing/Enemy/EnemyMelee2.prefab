@@ -183,7 +183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  DeathEffectyPool: {fileID: 11400000, guid: aa70ab6f8cdec3846ae6286acfe37083, type: 2}
+  Exploder: 1
+  Explosive: {fileID: 0}
+  DeathEffectyPool: {fileID: 11400000, guid: fb86a8869b3ab0441a420d9d4a44ea91, type: 2}
+  Self: {fileID: 0}
 --- !u!114 &3899983517654006550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,13 +369,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4463882724808430705}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.015, y: 0.081, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.027962834, w: 0.999609}
+  m_LocalPosition: {x: 0.015000107, y: 0.080999814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3899983517402374573}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.205}
 --- !u!212 &4463882724808430707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -413,7 +416,7 @@ SpriteRenderer:
   m_SortingLayerID: -185997713
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 530b6e29dd001aa43ad423c04be9f23d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c636ba679e9d984c954ccffb3af6df8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -495,7 +498,7 @@ SpriteRenderer:
   m_SortingLayerID: -185997713
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3e27aec2f7810184a933620c0dadcdd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68a38523bbbd1f44ca35007629f622c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,13 +533,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4463882726026709211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.015000101, y: 0.08099982, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03716021, w: 0.9993093}
+  m_LocalPosition: {x: 0.015000107, y: 0.080999814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3899983517402374573}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.259}
 --- !u!212 &4463882726026709213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -577,7 +580,7 @@ SpriteRenderer:
   m_SortingLayerID: -185997713
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c455b929f0ae70c40a2fa63f6a69ca4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 914c59909f6d2e8448c90160f8414b3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

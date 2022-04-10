@@ -21,6 +21,10 @@ public class MeleeAttacking : MonoBehaviour
                 MoveCheck.Timer = 2f;
             }
         }
+        else
+        {
+
+        }
 
     }
 }

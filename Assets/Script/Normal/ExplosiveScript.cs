@@ -6,14 +6,14 @@ using QFSW.MOP2;
 public class ExplosiveScript : MonoBehaviour
 {
     [SerializeField] ObjectPool itspool;
-    float Timer = 0.1f;
+    float Timer = 0.4f;
     [SerializeField]
     int damage = 5;
     public bool RPG = false;
     public bool Exploder = false;
     private void OnEnable()
     {
-        Timer = 0.25f;
+        Timer = 0.4f;
     }
     private void Update()
     {
@@ -45,7 +45,7 @@ public class ExplosiveScript : MonoBehaviour
             PlayerHPSystem player = collision.GetComponent<PlayerHPSystem>();
             if(player != null && Timer > 0)
             {
-                player.TakeDamage(5);
+                player.TakeDamage(-5);
             }
             if(enemy!= null && Timer > 0)
             {

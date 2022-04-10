@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 230413935774996255}
   - component: {fileID: 230413935774996254}
   - component: {fileID: 230413935774996249}
+  - component: {fileID: -5870824867579571827}
   m_Layer: 0
   m_Name: CargoGiSugar
   m_TagString: Untagged
@@ -126,3 +127,19 @@ PolygonCollider2D:
       - {x: 0.993647, y: -1.7616895}
       - {x: 0.993647, y: -1.74042}
       - {x: 0.98301226, y: -1.7297852}
+--- !u!114 &-5870824867579571827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230413935774996248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

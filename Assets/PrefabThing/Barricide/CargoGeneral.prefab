@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 520003077529989129}
   - component: {fileID: 520003077529989134}
   - component: {fileID: 520003077529989135}
+  - component: {fileID: -6978224297368498566}
   m_Layer: 0
   m_Name: CargoGeneral
   m_TagString: Untagged
@@ -69,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -638670073702508122, guid: 64471e77409f45647a532ba4a69768c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,3 +127,19 @@ PolygonCollider2D:
       - {x: 0.9595708, y: -1.7735939}
       - {x: 0.9808404, y: -1.7523243}
       - {x: 0.9702056, y: 0.8319238}
+--- !u!114 &-6978224297368498566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520003077529989132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

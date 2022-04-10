@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 311598030245877333}
   - component: {fileID: 311598030245877330}
   - component: {fileID: 311598030245877331}
+  - component: {fileID: 9158235211923273349}
   m_Layer: 0
   m_Name: CargoMedical
   m_TagString: Untagged
@@ -69,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -185997713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6225353833163662854, guid: 64471e77409f45647a532ba4a69768c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,3 +125,19 @@ PolygonCollider2D:
       - {x: 0.9742819, y: 0.81737304}
       - {x: 0.93174285, y: 1.2533984}
       - {x: 0.878569, y: 1.7213281}
+--- !u!114 &9158235211923273349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311598030245877328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

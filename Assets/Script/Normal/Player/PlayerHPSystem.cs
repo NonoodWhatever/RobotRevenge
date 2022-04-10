@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class PlayerHPSystem : MonoBehaviour
 {
     public int Playerhealth = 15;
@@ -10,11 +10,25 @@ public class PlayerHPSystem : MonoBehaviour
     public GameObject DeadMessage3;
     public GameObject DeadMessage4;
     public GameObject Player;
-    
-    
+    private float OverhealTimer = 1;
+
+    private void Start()
+    {
+        OverhealTimer = 3;
+    }
+    private void Update()
+    {
+        if (Playerhealth > 15 && OverhealTimer <= 0)
+        {
+            Playerhealth -= 1;
+            OverhealTimer = 3;
+        }
+        OverhealTimer -= Time.deltaTime;
+    }
     public void TakeDamage(int damage)
     {
         Playerhealth += damage;
+        OverhealTimer = 10;
         PlayerUITracker.instance.PlayerHPUIUpdate(Playerhealth);
         if (Playerhealth <= 0)
         {

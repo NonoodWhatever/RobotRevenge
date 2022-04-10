@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3372926144542410017}
   - component: {fileID: 3372926144542410023}
   - component: {fileID: 3372926144542410022}
+  - component: {fileID: -2902078799469165582}
   m_Layer: 0
   m_Name: Rock2Am
   m_TagString: Untagged
@@ -133,3 +134,19 @@ PolygonCollider2D:
       - {x: 0.655581, y: -0.5077539}
       - {x: 0.9533545, y: -0.3056934}
       - {x: 1.0277978, y: -0.22061525}
+--- !u!114 &-2902078799469165582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3372926144542410016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

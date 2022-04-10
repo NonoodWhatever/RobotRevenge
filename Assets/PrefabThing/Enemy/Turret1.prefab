@@ -199,7 +199,7 @@ MonoBehaviour:
   health: 50
   Exploder: 0
   Explosive: {fileID: 0}
-  DeathEffectyPool: {fileID: 11400000, guid: aa70ab6f8cdec3846ae6286acfe37083, type: 2}
+  DeathEffectyPool: {fileID: 11400000, guid: 0f406a1b7e25a5145a361460079a07d8, type: 2}
 --- !u!114 &3296996042202941179
 MonoBehaviour:
   m_ObjectHideFlags: 0

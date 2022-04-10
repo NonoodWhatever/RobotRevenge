@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4856342075303327305}
   - component: {fileID: 4856342075303327415}
   - component: {fileID: 4856342075303327414}
+  - component: {fileID: -2370089324738794798}
   m_Layer: 0
   m_Name: PlayerBrokenCar
   m_TagString: Untagged
@@ -188,3 +189,19 @@ PolygonCollider2D:
       - {x: 0.044546064, y: 0.5433399}
       - {x: 0.0339113, y: 0.5327051}
       - {x: -0.040532064, y: 0.5327051}
+--- !u!114 &-2370089324738794798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856342075303327304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

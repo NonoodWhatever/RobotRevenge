@@ -12,24 +12,43 @@ public class PlayerUITracker : MonoBehaviour
         instance = this;
     }
     [SerializeField]
-    TMP_Text HPCheck;
+    TMP_Text HPCheckText;
+    [SerializeField]
+    Slider HPCheckSlider;
     [SerializeField]
     TMP_Text Objective;
     [SerializeField]
-    Slider Ammo;
+    Slider AmmoSlide;
+    [SerializeField]
+    TMP_Text AmmoText;
     [SerializeField]
     TMP_Text EToActivate;
     bool EisOnactive;
     int Health;
-   public void PlayerHPUIUpdate(int healthchange)
+    public void PlayerHPUIUpdate(int healthchange)
     {
         Health = healthchange;
-        HPCheck.text = "Hit Point:" + Health;
+        if (HPCheckText != null) 
+        { 
+            HPCheckText.text = "Hit Point:" + Health;
+        }
+        if (HPCheckSlider != null)
+        {
+            HPCheckSlider.maxValue = 15;
+            HPCheckSlider.value = Health;
+        }
     }
     public void PlayerAmmoUIUpdate(int ammotochange, int ammoMax)
     {
-        Ammo.maxValue = ammoMax;
-        Ammo.value = ammotochange;
+        if (AmmoSlide != null)
+        {
+            AmmoSlide.maxValue = ammoMax;
+            AmmoSlide.value = ammotochange;
+        }
+        if (AmmoText != null)
+        {
+            AmmoText.text = ammotochange + " / " + ammoMax;
+        }
     }
     public void ObjectiveUIUpdate(Text thingTochange)
     {
@@ -37,7 +56,7 @@ public class PlayerUITracker : MonoBehaviour
     }
     public void PressEtoPickup(bool SetActiveYN)
     {
-        if(SetActiveYN = true)
+        if(SetActiveYN == true)
         {
             EisOnactive = true;
         }

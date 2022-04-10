@@ -14,34 +14,39 @@ public class MeleeMovementBehavior : MonoBehaviour
     private void Start()
     {
         RBPhys = this.GetComponent<Rigidbody2D>();
-        player = GameObject.Find("NewPlayerThing");
+        
     }
     public void Update()
     {
-        if (JustAttacked == false)
+        player = GameObject.Find("NewPlayerThing");
+        if (player != null)
         {
-            Vector3 direction = player.transform.position - transform.position;
-            //  Debug.Log(direction);
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-          RBPhys.rotation = angle;
-            direction.Normalize();
-            movement = direction;
+            if (JustAttacked == false)
+            {
+                Vector3 direction = player.transform.position - transform.position;
+                //  Debug.Log(direction);
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                RBPhys.rotation = angle;
+                direction.Normalize();
+                movement = direction;
+            }
+            else if (JustAttacked == true)
+            {
+                Vector3 direction = player.transform.position - transform.position;
+                //  Debug.Log(direction);
+                float angle = Mathf.Atan2(direction.y * 2, direction.x * 2) * Mathf.Rad2Deg;
+                RBPhys.rotation = angle;
+                direction.Normalize();
+                movement = -direction;
+                Timer -= Time.deltaTime;
+            }
         }
-        else if (JustAttacked == true)
-        {
-            Vector3 direction = player.transform.position - transform.position;
-            //  Debug.Log(direction);
-            float angle = Mathf.Atan2( direction.y * 2, direction.x * 2) * Mathf.Rad2Deg;
-            RBPhys.rotation = angle;
-            direction.Normalize();
-            movement = - direction;
-            Timer -= Time.deltaTime;
-        }
-        if(Timer < 0 )
-        {
-            Timer = 0;
-            JustAttacked = false;
-        }
+            if (Timer < 0)
+            {
+                Timer = 0;
+                JustAttacked = false;
+            }
+        
     }
 
     private void FixedUpdate()

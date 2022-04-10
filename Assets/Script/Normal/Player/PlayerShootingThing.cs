@@ -12,10 +12,15 @@ public class PlayerShootingThing : MonoBehaviour
     [SerializeField] ObjectPool bulletPool;
     //public GameObject BulletPrefabSelection;
     public AudioSource Sound;
-
+    public GameObject MuzzleFlash;
+    [SerializeField] float MuzzleTimerSelection;
+    private float MuzzleTimer;
     public bool Auto;
     public bool Shotgun;
     public bool EnergyGun;
+    public bool Grenade;
+    [SerializeField] ObjectPool CasingPool;
+    public GameObject EjectionZone;
 
     [SerializeField] float SecondPerBullet = 10.0f;
     float SecondBeforeBullet = 0.0f ;
@@ -31,14 +36,17 @@ public class PlayerShootingThing : MonoBehaviour
     bool Isreloading;
     //NewObjectPoolerTest objectPooler;
     private void OnEnable()
-    {
-        PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo,MaxAmmo);
+    {if (Grenade != true)
+        {
+            PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo, MaxAmmo);
+        }
     }
     private void Start()
     {
-        Debug.LogError("https://www.youtube.com/watch?v=pfUCdsLgr4Y");
+       // Debug.LogError("https://www.youtube.com/watch?v=pfUCdsLgr4Y");
         CurrentAmmo = MaxAmmo;
-        RechargeTimer = RechargeTime;
+        RechargeTimer = RechargeTime; 
+        Sound.GetComponent<AudioSource>();
         // objectPooler = NewObjectPoolerTest.Instance;
     }
     public float bulletForce = 20f;
@@ -46,6 +54,11 @@ public class PlayerShootingThing : MonoBehaviour
     public void Update()
     {// I put reload on front instead of isreloading is in case of character not reloading properly
         PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo, MaxAmmo);
+        MuzzleTimer -= Time.deltaTime;
+        if (MuzzleFlash != null && MuzzleTimer <= 0)
+        {
+            MuzzleFlash.SetActive(false);
+        }
         if (Input.GetKeyDown(KeyCode.R))
         {
             if (EnergyGun == false)
@@ -93,6 +106,7 @@ public class PlayerShootingThing : MonoBehaviour
                 if (Shotgun == false)
                 {
                     Shoot();
+                ShootAfterEffect();
                     CurrentAmmo--;
                 }
                 if (Shotgun == true)
@@ -100,13 +114,15 @@ public class PlayerShootingThing : MonoBehaviour
                     Shoot();
                     Shoot();
                     Shoot();
+                ShootAfterEffect();
                     CurrentAmmo--;
                 }
             }
             if (Input.GetButton("Fire1") && Auto == true && SecondBeforeBullet < 0)
             {
                 Shoot();
-                CurrentAmmo--;
+            ShootAfterEffect();
+            CurrentAmmo--;
                 SecondBeforeBullet = SecondPerBullet;
             } 
         if(EnergyGun == true && CurrentAmmo < MaxAmmo)
@@ -154,12 +170,26 @@ public class PlayerShootingThing : MonoBehaviour
             bullet.transform.rotation = firePoint.transform.rotation;
             Rigidbody2D PhysRB = bullet.GetComponent<Rigidbody2D>();
             PhysRB.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-            Sound.Play();
         }
-        if (bullet == null)
+        else
+        {print("BEEP NO ROUND EJECTED");}
+        
+    }
+    void ShootAfterEffect()
+    {
+        if (MuzzleFlash != null) { MuzzleFlash.SetActive(true); MuzzleTimer = MuzzleTimerSelection; }
+        if (CasingPool != null && EjectionZone != null)
         {
-            Sound.Play();
+            GameObject casing = CasingPool.GetObject();
+            casing.transform.position = EjectionZone.transform.position;
+            casing.transform.rotation = EjectionZone.transform.rotation;
+            Rigidbody2D CasingPhys = casing.GetComponent<Rigidbody2D>();
+            CasingPhys.AddForce(EjectionZone.transform.up * -5, ForceMode2D.Impulse);
         }
+        else { print("BEEP NO CASING EJECTING"); }
+
+        if (Sound != null) { Sound.Play(); }
+        else { print("BEEP NO SOUND FIRED"); }
     }
     #endregion
 
@@ -198,7 +228,7 @@ public class PlayerShootingThing : MonoBehaviour
     IEnumerator EarlyOverheat()
     {
         Isreloading = true;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         CurrentAmmo = MaxAmmo;
         Isreloading = false;

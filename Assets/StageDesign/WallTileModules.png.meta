@@ -161,6 +161,12 @@ TextureImporter:
   - first:
       213: -2499850813216637213
     second: WallTileModules_14
+  - first:
+      213: 4875115472001130133
+    second: WallTileModules_27
+  - first:
+      213: -2874404003544573009
+    second: WallTileModules_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -277,10 +283,10 @@ TextureImporter:
       name: WallTileModules_1
       rect:
         serializedVersion: 2
-        x: 269
-        y: 911
-        width: 144
-        height: 144
+        x: 270
+        y: 912
+        width: 142
+        height: 142
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -613,10 +619,10 @@ TextureImporter:
       name: WallTileModules_0
       rect:
         serializedVersion: 2
-        x: 120
-        y: 911
-        width: 144
-        height: 145
+        x: 121
+        y: 912
+        width: 142
+        height: 142
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -765,7 +771,7 @@ TextureImporter:
         width: 145
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -786,7 +792,7 @@ TextureImporter:
         width: 144
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -807,7 +813,7 @@ TextureImporter:
         width: 144
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -828,7 +834,7 @@ TextureImporter:
         width: 143
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -836,6 +842,195 @@ TextureImporter:
       bones: []
       spriteID: 8abbae14a57fcaa30800000000000000
       internalID: 4228026117219072936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_27
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 911
+        width: 142
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e53ab31b3e7a340800000000000000
+      internalID: 4875115472001130133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_28
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 912
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabd3cbb9c01c18d0800000000000000
+      internalID: -2874404003544573009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_29
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 912
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8361d2eb08a8463f0800000000000000
+      internalID: -908448939270924744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_30
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 912
+        width: 142
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7971a4848b8b35c80800000000000000
+      internalID: -8335115383706347625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_31
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 912
+        width: 142
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e1a87507a9250e0800000000000000
+      internalID: -2282592253827736029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_32
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 912
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ad69796e91dad20800000000000000
+      internalID: 3291315380854119035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_33
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 616
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0578b81ab01ee7100800000000000000
+      internalID: 107770881174636368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_34
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 468
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242a063e40fadaee0800000000000000
+      internalID: -1248149086182268350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallTileModules_35
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 167
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bde97d8a1c001f0800000000000000
+      internalID: -1080650979652740228
       vertices: []
       indices: 
       edges: []

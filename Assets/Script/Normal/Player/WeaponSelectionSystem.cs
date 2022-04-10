@@ -16,10 +16,10 @@ public class WeaponSelectionSystem : MonoBehaviour
     [SerializeField]
     public int WeaponSlot2Index;
 
-    [SerializeField]
-    public GameObject[] GrenadesSlot;
-    [SerializeField]
-    public int GrenadesSlotIndex;
+  //  [SerializeField]
+   // public GameObject[] GrenadesSlot;
+   // [SerializeField]
+    //public int GrenadesSlotIndex;
 
 
     [SerializeField] public GameObject[] SPWeaponsSlot;
@@ -28,7 +28,7 @@ public class WeaponSelectionSystem : MonoBehaviour
 
     public Dropdown WeaponSelection1DD;
     public Dropdown WeaponSelection2DD;
-    public Dropdown GrenadeSelectionDD;
+  //  public Dropdown GrenadeSelectionDD;
     public GameObject WholeWeaponSelection;
     
     private void Awake()
@@ -36,7 +36,7 @@ public class WeaponSelectionSystem : MonoBehaviour
         instanceWS = this;
         WeaponSlot1Index = WeaponSelection1DD.value;
         WeaponSlot2Index = WeaponSelection2DD.value;
-        GrenadesSlotIndex = GrenadeSelectionDD.value;
+    //    GrenadesSlotIndex = GrenadeSelectionDD.value;
         if(WeaponSlot2Index == WeaponSlot1Index)
         {
             WeaponSlot2Index++;
@@ -50,7 +50,8 @@ public class WeaponSelectionSystem : MonoBehaviour
             }
         }
 
-        if (WeaponsSlot1 != null && WeaponsSlot2 != null && GrenadesSlot != null)
+        if (WeaponsSlot1 != null && WeaponsSlot2 != null)
+        //&& GrenadesSlot != null
         {
             for (int i = 0; i < 9; i++)
             {
@@ -72,18 +73,20 @@ public class WeaponSelectionSystem : MonoBehaviour
                     WeaponsSlot2[i].SetActive(true);
                 }
             }
-            for (int i2 = 0; i2 < 5; i2++)
-            {
-
-                if (i2 != GrenadesSlotIndex)
-                {
-                    GrenadesSlot[i2].SetActive(false);
-                }
-                else if (i2 == GrenadesSlotIndex)
-                {
-                    GrenadesSlot[i2].SetActive(true);
-                }
-            }
+      ///
+      //      for (int i2 = 0; i2 < 5; i2++)
+      //      {
+      //
+      //          if (i2 != GrenadesSlotIndex)
+      //          {
+      //              GrenadesSlot[i2].SetActive(false);
+      //          }
+      //          else if (i2 == GrenadesSlotIndex)
+      //          {
+      //              GrenadesSlot[i2].SetActive(true);
+      //          }
+      //      }
+      ///
         }
     }
 

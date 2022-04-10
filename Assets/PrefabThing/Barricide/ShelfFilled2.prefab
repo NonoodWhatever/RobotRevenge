@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8785125932428242629}
   - component: {fileID: 8785125932428242627}
   - component: {fileID: 8785125932428242628}
+  - component: {fileID: -1863312364192906155}
   m_Layer: 0
   m_Name: ShelfFilled2
   m_TagString: Untagged
@@ -120,3 +121,19 @@ PolygonCollider2D:
       - {x: 1.210625, y: -0.4982911}
       - {x: 1.306338, y: -0.4344825}
       - {x: 1.348877, y: -0.20051765}
+--- !u!114 &-1863312364192906155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785125932428242630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
