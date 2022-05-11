@@ -19,7 +19,7 @@ public class ExploderBoomTrigger : MonoBehaviour
     {
         if (Timer <= 0)
         {
-            uhoh.TakeDamage(10000);
+            uhoh.TakeDamage(10000, false);
         }
         if (Beep.activeSelf == true)
         {

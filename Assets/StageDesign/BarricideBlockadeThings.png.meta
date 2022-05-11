@@ -50,6 +50,18 @@ TextureImporter:
   - first:
       213: -7980727379657422166
     second: Counter2
+  - first:
+      213: -6064775001724715101
+    second: BarricideBroken
+  - first:
+      213: -784224331139284366
+    second: SandBag1
+  - first:
+      213: 5294387800850023099
+    second: SandBag2
+  - first:
+      213: 3752486689057800192
+    second: SandBag3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -230,7 +242,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
-        y: 405
+        y: 404
         width: 162
         height: 261
       alignment: 0
@@ -486,7 +498,7 @@ TextureImporter:
         width: 144
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,6 +506,90 @@ TextureImporter:
       bones: []
       spriteID: aaa094e5bb2ce3190800000000000000
       internalID: -7980727379657422166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarricideBroken
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 685
+        width: 163
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af778bb44795dba0800000000000000
+      internalID: -6064775001724715101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandBag1
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 123
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27289363020ed15f0800000000000000
+      internalID: -784224331139284366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandBag2
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 875
+        width: 116
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2c3dc67a1797940800000000000000
+      internalID: 5294387800850023099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SandBag3
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 894
+        width: 77
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0000cad13c2831430800000000000000
+      internalID: 3752486689057800192
       vertices: []
       indices: 
       edges: []

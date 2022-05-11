@@ -25,6 +25,27 @@ public class PlayerUITracker : MonoBehaviour
     TMP_Text EToActivate;
     bool EisOnactive;
     int Health;
+    float timer;
+    private void Start()
+    {
+        timer = 5;
+    }
+    void Update()
+    {
+        timer -= Time.deltaTime;
+        if(timer <= 0)
+        {
+            Objective.gameObject.SetActive(false);
+        }
+        else
+        {
+            Objective.gameObject.SetActive(true);
+        }
+        if (Input.GetKey(KeyCode.Tab) )
+        {
+            timer = 2;
+        }
+    }
     public void PlayerHPUIUpdate(int healthchange)
     {
         Health = healthchange;
@@ -52,6 +73,7 @@ public class PlayerUITracker : MonoBehaviour
     }
     public void ObjectiveUIUpdate(Text thingTochange)
     {
+        timer = 4;
         Objective.text = "Objective:" + thingTochange;
     }
     public void PressEtoPickup(bool SetActiveYN)

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbea3f8127a77f24489ce150e13b1ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 5
+  Damage: 50
   itspool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   effectPool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}
 --- !u!61 &3062489445017298728

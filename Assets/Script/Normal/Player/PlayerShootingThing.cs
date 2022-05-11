@@ -112,8 +112,6 @@ public class PlayerShootingThing : MonoBehaviour
                 if (Shotgun == true)
                 {
                     Shoot();
-                    Shoot();
-                    Shoot();
                 ShootAfterEffect();
                     CurrentAmmo--;
                 }

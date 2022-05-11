@@ -34,8 +34,8 @@ public class WeaponSelectionSystem : MonoBehaviour
     private void Awake()
     {
         instanceWS = this;
-        WeaponSlot1Index = WeaponSelection1DD.value;
-        WeaponSlot2Index = WeaponSelection2DD.value;
+          WeaponSlot1Index = WeaponSelection1DD.value;
+          WeaponSlot2Index = WeaponSelection2DD.value;
     //    GrenadesSlotIndex = GrenadeSelectionDD.value;
         if(WeaponSlot2Index == WeaponSlot1Index)
         {

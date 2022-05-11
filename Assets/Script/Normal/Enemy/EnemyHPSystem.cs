@@ -7,14 +7,22 @@ public class EnemyHPSystem : MonoBehaviour
 {
     public int health = 50;
     public bool Exploder = true;
+    public bool Shotgunimmune = false;
     //public GameObject deathEffect;
     [SerializeField] ObjectPool Explosive;
     [SerializeField] ObjectPool DeathEffectyPool;
     [SerializeField] GameObject Self;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool Shotgun)
     {
-        health -= damage;
+        if (Shotgun == true && Shotgunimmune == true)
+        {
+            health -= damage/3;
+        }
+        else
+        {
+            health -= damage;
+        }
 
         if (health <= 0)
         {

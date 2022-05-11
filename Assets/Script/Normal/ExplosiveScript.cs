@@ -33,11 +33,11 @@ public class ExplosiveScript : MonoBehaviour
         {
             if (RPG == false)
           {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage, false);
           }
             else
           {
-                enemy.TakeDamage(10000);
+                enemy.TakeDamage(10000, false);
           }
         }
         if(Exploder == true || RPG == true)
@@ -49,7 +49,7 @@ public class ExplosiveScript : MonoBehaviour
             }
             if(enemy!= null && Timer > 0)
             {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage, false);
             }
         }
     }

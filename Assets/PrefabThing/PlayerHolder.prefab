@@ -141,6 +141,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3009927009369659666, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: Shotgun
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7851239210473861457, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

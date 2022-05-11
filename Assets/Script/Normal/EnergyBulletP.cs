@@ -10,6 +10,7 @@ public class EnergyBulletP : MonoBehaviour
     [SerializeField] ObjectPool HitEffectPool;
     [SerializeField] ObjectPool ExplosivePool;
     public int Damage;
+    [SerializeField] bool shotgun;
     //public GameObject Explosion;
     private float DelayBeforeDestroy = 30.0f;
     private float DelayBeforeStopEffect = 0.5f;
@@ -39,11 +40,11 @@ public class EnergyBulletP : MonoBehaviour
         if (enemy != null && ExplosivePool == null)
         {
 
-            enemy.TakeDamage(Damage);
+            enemy.TakeDamage(Damage, shotgun);
         }
         else if (enemy != null && ExplosivePool != null)
         {
-            enemy.TakeDamage(Damage);
+            enemy.TakeDamage(Damage, shotgun);
             ExplosivePool.GetObject();
             ExplosivePool.GetObject(transform.position, Quaternion.identity);
         }

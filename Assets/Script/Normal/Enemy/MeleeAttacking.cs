@@ -16,10 +16,11 @@ public class MeleeAttacking : MonoBehaviour
         {
             Player.TakeDamage(-ouchpoint);
             print("ouch");
-            if (MoveCheck.JustAttacked == false) {
-                MoveCheck.JustAttacked = true;
-                MoveCheck.Timer = 2f;
-            }
+          //  if (MoveCheck.JustAttacked == false) 
+          //  {
+          //      MoveCheck.JustAttacked = true;
+         //       MoveCheck.Timer = 2f;
+          //  }
         }
         else
         {

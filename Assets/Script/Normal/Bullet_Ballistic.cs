@@ -9,6 +9,7 @@ public class Bullet_Ballistic : MonoBehaviour
     public int Damage;
     [SerializeField] ObjectPool itspool;
     [SerializeField] ObjectPool effectPool;
+    [SerializeField] bool shotgun;
     private float DelayBeforeDestroy = 45.0f;
     private float DelayBeforeStopEffect = 0.5f;
     
@@ -32,7 +33,7 @@ public class Bullet_Ballistic : MonoBehaviour
         EnemyHPSystem enemy = collision.GetComponent<EnemyHPSystem>();
         if(enemy != null && enemy.tag != "EnemyShield")
         {
-            enemy.TakeDamage(Damage);
+            enemy.TakeDamage(Damage, shotgun);
         }
         DelayBeforeStopEffect = 0.5f;
         itspool.Release(gameObject);

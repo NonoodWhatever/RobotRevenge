@@ -60,7 +60,7 @@ public class HeavyMeleeAttackMechanicism : MonoBehaviour
        
         if (EverythingElse != null)
         {
-            EverythingElse.TakeDamage(NonPlayerDamage);
+            EverythingElse.TakeDamage(NonPlayerDamage, false);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

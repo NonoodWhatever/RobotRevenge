@@ -10,7 +10,7 @@ public class PlayerMelee : MonoBehaviour
             EnemyHPSystem enemy = collision.GetComponent<EnemyHPSystem>();
             if (enemy != null)
             {
-                enemy.TakeDamage(2);
+                enemy.TakeDamage(2, false);
             }
         }
     }

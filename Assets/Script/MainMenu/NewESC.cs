@@ -7,6 +7,7 @@ public class NewESC : MonoBehaviour
 
     private bool EscPress = false;
     [SerializeField] GameObject KeepitDown;
+    public GameObject PlayerGun;
 
     // Update is called once per frame
     void Update()
@@ -14,10 +15,14 @@ public class NewESC : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && EscPress == false)
         {
             EscPress = true;
+            PlayerGun.SetActive(false);
+            Time.timeScale = 0f;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && EscPress == true)
         {
             EscPress = false;
+            PlayerGun.SetActive(true);
+            Time.timeScale = 1f;
         }
         if(EscPress == false)
         {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class OnTriggertoActive : MonoBehaviour
 {
    public GameObject ItemToActive1;
@@ -16,6 +17,9 @@ public class OnTriggertoActive : MonoBehaviour
     bool Activation = false;
     [SerializeField] float Timer = 0;
     [SerializeField] bool EbuttonNeeded;
+   // [SerializeField] bool ObjectiveChange;
+    //[SerializeField] Text Words;
+  
     public void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerHPSystem Player = collision.GetComponent<PlayerHPSystem>();
@@ -65,6 +69,7 @@ public class OnTriggertoActive : MonoBehaviour
             if (ItemToActiveASAP2 != null) { ItemToActiveASAP2.SetActive(true); }
             if (ItemToSleepASAP1 != null) { ItemToSleepASAP1.SetActive(false); }
             if (ItemToSleepASAP2 != null) { ItemToSleepASAP2.SetActive(false); }
+        //    if (ObjectiveChange == true) { PlayerUITracker.instance.ObjectiveUIUpdate(Words); }
             Timer -= Time.deltaTime;
         }
         if (Timer <= 0 && Activation == true)
