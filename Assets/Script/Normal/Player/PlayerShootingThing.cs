@@ -38,8 +38,9 @@ public class PlayerShootingThing : MonoBehaviour
     private void OnEnable()
     {if (Grenade != true)
         {
-            PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo, MaxAmmo);
+            PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo-1, MaxAmmo);
         }
+    
     }
     private void Start()
     {
@@ -54,6 +55,7 @@ public class PlayerShootingThing : MonoBehaviour
     public void Update()
     {// I put reload on front instead of isreloading is in case of character not reloading properly
         PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo, MaxAmmo);
+        PlayerUITracker.instance.ReloadDone(Isreloading);
         MuzzleTimer -= Time.deltaTime;
         if (MuzzleFlash != null && MuzzleTimer <= 0)
         {

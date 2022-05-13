@@ -5010,7 +5010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8749573155639479870}
   - component: {fileID: 9009682447459178592}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ExploderRotationPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5058,7 +5058,7 @@ GameObject:
   - component: {fileID: 4433224600903886256}
   - component: {fileID: 6054171600484082156}
   - component: {fileID: 8728741210661539447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BombZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5550,6 +5550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   Exploder: 1
+  Shotgunimmune: 0
   Explosive: {fileID: 11400000, guid: 7d9baef7d037bb54c81d344a168db851, type: 2}
   DeathEffectyPool: {fileID: 11400000, guid: aa70ab6f8cdec3846ae6286acfe37083, type: 2}
   Self: {fileID: 0}

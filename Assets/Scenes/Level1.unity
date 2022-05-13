@@ -52343,6 +52343,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1003914313}
     m_Modifications:
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648981774677419941, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465492810328338051, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465492810328338051, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4494587053419218385, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -52433,26 +52485,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4494587053419218398, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494587053862466577, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494587053862466577, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494587054762261005, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494587054762261005, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494587054762261005, guid: 1ff0e33115bdf7341ad01366339c9ffa, type: 3}
-      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -52912,7 +52944,7 @@ GameObject:
   - component: {fileID: 1516936914}
   - component: {fileID: 1516936916}
   - component: {fileID: 1516936915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52993,7 +53025,7 @@ GameObject:
   - component: {fileID: 1521570351}
   - component: {fileID: 1521570353}
   - component: {fileID: 1521570352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60860,6 +60892,10 @@ PrefabInstance:
     - target: {fileID: 4452332171160363737, guid: 3f3bf31d4ed91184fbf8ebe75790cb66, type: 3}
       propertyPath: m_Name
       value: WeaponSelection
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452332171160363737, guid: 3f3bf31d4ed91184fbf8ebe75790cb66, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4452332171160363738, guid: 3f3bf31d4ed91184fbf8ebe75790cb66, type: 3}
       propertyPath: m_Pivot.x

@@ -2501,9 +2501,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4879390639613775011, guid: e296c33f425caac489729a859e3b6c5d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9b586be2d233a3b4fbb05210e73e7052, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -5407,7 +5407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7367387511095376553
 Transform:
   m_ObjectHideFlags: 0
@@ -5487,7 +5487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 50104200972374761}
-  bulletPool: {fileID: 11400000, guid: 686ec5051758d1a4695ec85a5c04e1a5, type: 2}
+  bulletPool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   Sound: {fileID: 7896098929714037723}
   MuzzleFlash: {fileID: 0}
   MuzzleTimerSelection: 0

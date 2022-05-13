@@ -100,6 +100,7 @@ MonoBehaviour:
   Damage: 50
   itspool: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
   effectPool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}
+  shotgun: 1
 --- !u!61 &3062489445017298728
 BoxCollider2D:
   m_ObjectHideFlags: 0

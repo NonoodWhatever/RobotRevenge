@@ -55,15 +55,15 @@ public class PlayerWeaponSelection : MonoBehaviour
           //  Grenade.SetActive(false);
             WeaponSP.SetActive(false);
         }
-        if (Input.GetKey(KeyCode.Alpha4))
-        {
-            PlayerNonMelee.SetActive(true);
-            Weapon1.SetActive(false);
-            Weapon2.SetActive(false);
-            PlayerWeaponMelee.SetActive(false);
+      //  if (Input.GetKey(KeyCode.Alpha4))
+      //  {
+       //     PlayerNonMelee.SetActive(true);
+       //     Weapon1.SetActive(false);
+       //     Weapon2.SetActive(false);
+        //    PlayerWeaponMelee.SetActive(false);
            // Grenade.SetActive(true);
-            WeaponSP.SetActive(false);
-        }
+        //    WeaponSP.SetActive(false);
+      //  }
         if (Input.GetKey(KeyCode.Alpha5))
         {
             PlayerNonMelee.SetActive(true);

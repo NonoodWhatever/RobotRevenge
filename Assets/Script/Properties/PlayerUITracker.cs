@@ -23,6 +23,8 @@ public class PlayerUITracker : MonoBehaviour
     TMP_Text AmmoText;
     [SerializeField]
     TMP_Text EToActivate;
+    [SerializeField]
+    TMP_Text RELOAD;
     bool EisOnactive;
     int Health;
     float timer;
@@ -83,4 +85,17 @@ public class PlayerUITracker : MonoBehaviour
             EisOnactive = true;
         }
     }
+
+    public void ReloadDone(bool Reloading)
+    {
+        if (Reloading == true)
+        {
+            RELOAD.gameObject.SetActive(true);
+        }
+        else
+        {
+            RELOAD.gameObject.SetActive(false);
+        }
+    }
+
 }
