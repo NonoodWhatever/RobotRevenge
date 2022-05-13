@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8624804423155876360
 Transform:
   m_ObjectHideFlags: 0
@@ -137,6 +137,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8624804423155876360}
     m_Modifications:
+    - target: {fileID: 1501749995, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CasingPool
+      value: 
+      objectReference: {fileID: 11400000, guid: f5fd9c4998de2e942b1887bae91aa408, type: 2}
+    - target: {fileID: 1501749995, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: CurrentAmmo
+      value: 99999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501749995, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: bulletForce
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2354404868916818209, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -151,6 +163,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851239210473861457, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955108137301011631, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8545097379996356254, guid: 5d5c1a7e9f2fe0849977618d01e258be, type: 3}

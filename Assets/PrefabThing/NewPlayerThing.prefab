@@ -2500,7 +2500,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4879390639613775011, guid: e296c33f425caac489729a859e3b6c5d, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c2da2b239ae105b4c8080146a36a511f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b586be2d233a3b4fbb05210e73e7052, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5497,7 +5497,7 @@ MonoBehaviour:
   Grenade: 0
   CasingPool: {fileID: 0}
   EjectionZone: {fileID: 0}
-  SecondPerBullet: 0.2
+  SecondPerBullet: 0.05
   ReloadTimeMinimum: 0
   RechargeTime: 1
   MaxAmmo: 999999999

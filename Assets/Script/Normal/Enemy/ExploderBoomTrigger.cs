@@ -6,7 +6,7 @@ public class ExploderBoomTrigger : MonoBehaviour
 {
     [SerializeField] EnemyHPSystem uhoh;
     [SerializeField] GameObject Beep;
-
+    
     float Timer = 4.0f;
 
     void Start()

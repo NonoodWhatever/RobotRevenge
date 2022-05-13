@@ -4,6 +4,7 @@ using UnityEngine;
 using QFSW.MOP2;
 public class TurretRotationAndShooting : MonoBehaviour
 {   //Brackeys's based
+
     [SerializeField] Transform target;
     public float range = 10f;
    

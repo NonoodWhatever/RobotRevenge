@@ -48,7 +48,11 @@ public class MeleeMovementBehavior : MonoBehaviour
             }
         
     }
-
+    public void Attacked(float TimeThing)
+    {
+        JustAttacked = true;
+        Timer = TimeThing;
+    }
     private void FixedUpdate()
     {
         move(movement);

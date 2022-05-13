@@ -482,6 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 30
   Exploder: 0
+  Shotgunimmune: 0
   Explosive: {fileID: 0}
   DeathEffectyPool: {fileID: 0}
   Self: {fileID: 0}
@@ -23378,26 +23379,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6187562816617540671, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9961947
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187562816617540671, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187562816617540671, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187562816617540671, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.08715578
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187562816617540671, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8617775834945466880, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
       propertyPath: m_Name
       value: Boss
@@ -23445,14 +23426,6 @@ PrefabInstance:
     - target: {fileID: 8617775834945466883, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617775834945466884, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: health
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617775834945466884, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
-      propertyPath: Exploder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d756b4ef5d2f5f4598a70d1fa2215ff, type: 3}
@@ -26171,6 +26144,10 @@ PrefabInstance:
     - target: {fileID: 6677994048527900954, guid: 820a7d9201f9a6a4eb9d216e9d4396b2, type: 3}
       propertyPath: m_Name
       value: HeavyMelee1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677994048527900954, guid: 820a7d9201f9a6a4eb9d216e9d4396b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6677994048527900955, guid: 820a7d9201f9a6a4eb9d216e9d4396b2, type: 3}
       propertyPath: m_RootOrder

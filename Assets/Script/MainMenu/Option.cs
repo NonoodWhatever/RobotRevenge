@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 public class Option : MonoBehaviour
 {
-    public AudioMixer Audio;
+    public AudioMixer masterAudio;
+
     Resolution[] resolutions;
     public Dropdown ResDropdown;
+    public TMP_Dropdown ResDropDownTMP;
     private void Start()
     {
         resolutions = Screen.resolutions;
 
         ResDropdown.ClearOptions();
+        ResDropDownTMP.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
@@ -26,9 +30,14 @@ public class Option : MonoBehaviour
                 currentResolutionIndex = i;
             }
         }
-        ResDropdown.AddOptions(options);
-        ResDropdown.value = currentResolutionIndex;
-        ResDropdown.RefreshShownValue();
+        ResDropDownTMP.AddOptions(options);
+        ResDropDownTMP.value = currentResolutionIndex;
+        ResDropDownTMP.RefreshShownValue();
+        ResDropDownTMP.AddOptions(options);
+        ResDropDownTMP.value = currentResolutionIndex;
+        ResDropDownTMP.RefreshShownValue();  
+        
+       
     }
 
     public void SetRes(int ResIndex)
@@ -36,11 +45,27 @@ public class Option : MonoBehaviour
         Resolution res = resolutions[ResIndex];
         Screen.SetResolution(res.width, res.height, Screen.fullScreen);
     }
-    public void SetVolume(float volume)
+
+
+    public void SetVolume(float newvolume)
     {
         //Debug.Log(volume);
-        Audio.SetFloat("Volume", volume);
+        masterAudio.SetFloat("MasterVolume", newvolume);
     }
+
+    public void SetNoise(float newvolume)
+    {
+        //Debug.Log(volume);
+        masterAudio.SetFloat("NoiseVolume", newvolume);
+    }
+
+    public void SetMusic(float newvolume)
+    {
+        //Debug.Log(volume);
+        masterAudio.SetFloat("MusicVolume", newvolume);
+    }
+
+
     public void SetFullscreen(bool isfullscreen)
     {
         Screen.fullScreen = isfullscreen;
