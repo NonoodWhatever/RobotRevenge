@@ -62,6 +62,18 @@ TextureImporter:
   - first:
       213: 3752486689057800192
     second: SandBag3
+  - first:
+      213: -4321515334343407785
+    second: BarricideBlockadeThings_20
+  - first:
+      213: 2682672832435358547
+    second: BarricideBlockadeThings_21
+  - first:
+      213: -6712692230299018525
+    second: BarricideBlockadeThings_22
+  - first:
+      213: 732341910280050928
+    second: BarricideBlockadeThings_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -590,6 +602,90 @@ TextureImporter:
       bones: []
       spriteID: 0000cad13c2831430800000000000000
       internalID: 3752486689057800192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarricideBlockadeThings_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 284
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757ce0523b4e604c0800000000000000
+      internalID: -4321515334343407785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarricideBlockadeThings_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 192
+        width: 133
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b86e94ab4ca3520800000000000000
+      internalID: 2682672832435358547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarricideBlockadeThings_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 200
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea908e5bf9b7d2a0800000000000000
+      internalID: -6712692230299018525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarricideBlockadeThings_23
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 74
+        width: 104
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f89f58561dc92a00800000000000000
+      internalID: 732341910280050928
       vertices: []
       indices: 
       edges: []

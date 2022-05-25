@@ -1,0 +1,32 @@
+15-19 / 5
+Made posters the games.
+More barricade type stuff: Crate, unbroken car, Plant, and trashcan.
+
+The path pointing the way for player.
+20 / 5
+Floor Tiles improved. Wall Tiles improved.
+21 / 5
+Weapon now have different effect. 
+
+22/ 5
+Make hit effect more noticeable. Secret Added to all levels. Hit sound on enemy on hit.
+
+23/ 5
+Update more on Hit sound on enemy. Player's hurt sound and death sound. Another Cheat added (P for HP)
+Add more sound into the game. Main menu background changes. Add Music for stage 2. Add hurt tint on hurt.
+
+24/ 5
+Update Gameplay UI so it works more properly, change level descriptions. Add End-game Credit screen. Dead body's particles
+
+25/ 5
+Planned last day for game updating. Update sound to be better. Work on the game/tech documents. 
+
+I hope all goes well.
+
+26/ 5
+Slides work.
+
+
+CHEAT LIST
+5 = OP gun
+P (hold) = Add Health

@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: ExploderExplosion_Swimming
   _template: {fileID: 3933065254030228887, guid: 5fd50b267974b5144bbc7a1321336b45, type: 3}
   _defaultSize: 0
-  _maxSize: 10
+  _maxSize: 4
   _incrementalInstanceNames: 0
   _autoInitialize: 0
   _repopulateOnSceneChange: 0

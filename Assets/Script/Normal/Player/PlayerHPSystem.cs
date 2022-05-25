@@ -9,7 +9,9 @@ public class PlayerHPSystem : MonoBehaviour
     public GameObject DeadMessage2;
     public GameObject DeadMessage3;
     public GameObject DeadMessage4;
+    [SerializeField] GameObject DeathSound;
     public GameObject Player;
+    [SerializeField] AudioSource ouch;
     private float OverhealTimer = 1;
 
     private void Start()
@@ -18,6 +20,10 @@ public class PlayerHPSystem : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Playerhealth++;
+        }
         if (Playerhealth > 15 && OverhealTimer <= 0)
         {
             Playerhealth -= 1;
@@ -30,13 +36,16 @@ public class PlayerHPSystem : MonoBehaviour
         Playerhealth += damage;
         OverhealTimer = 10;
         PlayerUITracker.instance.PlayerHPUIUpdate(Playerhealth);
+        ouch.Play();
         if (Playerhealth <= 0)
         {
             GameOver();
         }
     }
     void GameOver()
-    {if (DeadMessage1 != null)
+    {
+        DeathSound.SetActive(true);
+        if (DeadMessage1 != null)
         {
             DeadMessage1.SetActive(true);
         }

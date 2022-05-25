@@ -114,9 +114,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelfPool: {fileID: 11400000, guid: 7cbdd623de8b3be4e872d6bea75d6c1a, type: 2}
-  HitEffectPool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}
+  HitEffectPool: {fileID: 11400000, guid: 0e36e453af60b144d92dfc4b44e3753f, type: 2}
   ExplosivePool: {fileID: 0}
   Damage: 7
+  shotgun: 0
 --- !u!50 &2076117929
 Rigidbody2D:
   serializedVersion: 4

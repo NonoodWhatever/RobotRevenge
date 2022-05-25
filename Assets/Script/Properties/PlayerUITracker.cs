@@ -25,16 +25,21 @@ public class PlayerUITracker : MonoBehaviour
     TMP_Text EToActivate;
     [SerializeField]
     TMP_Text RELOAD;
+    [SerializeField]
+    RawImage OUCHIE;
     bool EisOnactive;
     int Health;
     float timer;
+    float ouchtimer;
     private void Start()
     {
         timer = 5;
+        ouchtimer = 0;
     }
     void Update()
     {
         timer -= Time.deltaTime;
+        ouchtimer -= Time.deltaTime;
         if(timer <= 0)
         {
             Objective.gameObject.SetActive(false);
@@ -47,9 +52,18 @@ public class PlayerUITracker : MonoBehaviour
         {
             timer = 2;
         }
+        if(ouchtimer <= 0)
+        {
+            OUCHIE.gameObject.SetActive(false);
+        }
     }
     public void PlayerHPUIUpdate(int healthchange)
     {
+        if( healthchange < Health)
+        {
+            OUCHIE.gameObject.SetActive(true);
+            ouchtimer = 0.2f;
+        }
         Health = healthchange;
         if (HPCheckText != null) 
         { 

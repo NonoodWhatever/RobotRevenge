@@ -8,7 +8,7 @@ public class EffectTimer : MonoBehaviour
    
     [SerializeField] ObjectPool itspool;
     [SerializeField] AudioSource hit;
-    float Timer = 0.5f;
+    [SerializeField]float Timer = 0.5f;
      void OnEnable()
     {
         Timer = 0.1f;

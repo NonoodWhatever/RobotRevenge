@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelfPool: {fileID: 11400000, guid: 0ebb21d42b0ca3647909a6f3b32fd0ca, type: 2}
-  HitEffectPool: {fileID: 11400000, guid: 144eacad0fb500a40bd98643cfe90d1d, type: 2}
+  HitEffectPool: {fileID: 11400000, guid: 0e36e453af60b144d92dfc4b44e3753f, type: 2}
   Damage: 1
 --- !u!70 &949457958984258064
 CapsuleCollider2D:
