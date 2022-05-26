@@ -24,7 +24,7 @@ Planned last day for game updating. Update sound to be better. Work on the game/
 I hope all goes well.
 
 26/ 5
-Slides work.
+Slides work. Changes on main menu music. add music in selection menu. Update the How to play menu. Update the gun selection.
 
 
 CHEAT LIST
