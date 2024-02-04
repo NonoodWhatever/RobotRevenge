@@ -6,27 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/OLD/MainMenu.unity
     guid: 2e05227c188d0c44e8b3f173d0471b72
   - enabled: 1
-    path: Assets/Scenes/SelectionMenu.unity
+    path: Assets/Scenes/OLD/SelectionMenu.unity
     guid: 3a83e6b8cb03e1b438e75c8134c94913
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/OLD/Level1.unity
     guid: 06d50ccc2e2e5694ea84dbf9875fd540
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/OLD/Level2.unity
     guid: 2f8549c979d1b3746a79748ab1f4db4c
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
+    path: Assets/Scenes/OLD/Level4.unity
     guid: 4b7e05ad051d9ac449044ca1793c4dbd
   - enabled: 1
-    path: Assets/Scenes/Credit.unity
+    path: Assets/Scenes/OLD/Credit.unity
     guid: 806415f85e77cbe4180b39e8f0dfc121
   - enabled: 0
-    path: Assets/Scenes/NewTestingSite.unity
+    path: Assets/Scenes/OLD/NewTestingSite.unity
     guid: 785af9787134b71469a099713e65e8fd
   - enabled: 0
-    path: Assets/Scenes/NewerTestingSite.unity
+    path: Assets/Scenes/OLD/NewerTestingSite.unity
     guid: 9ee03cce34e4ff1499f603e9468e74d3
   m_configObjects: {}
