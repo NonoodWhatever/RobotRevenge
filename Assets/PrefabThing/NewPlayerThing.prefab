@@ -6359,6 +6359,7 @@ MonoBehaviour:
   DeadMessage4: {fileID: 0}
   DeathSound: {fileID: 0}
   Player: {fileID: 8545097380207122094}
+  ouch: {fileID: 0}
 --- !u!95 &776049529
 Animator:
   serializedVersion: 3
