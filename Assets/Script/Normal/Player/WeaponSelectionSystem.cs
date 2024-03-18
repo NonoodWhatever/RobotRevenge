@@ -53,7 +53,7 @@ public class WeaponSelectionSystem : MonoBehaviour
         if (WeaponsSlot1 != null && WeaponsSlot2 != null)
         //&& GrenadesSlot != null
         {
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 8; i++)
             {
                 if (i != WeaponSlot1Index)
                 {

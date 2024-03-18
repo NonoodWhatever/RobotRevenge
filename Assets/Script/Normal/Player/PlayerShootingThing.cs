@@ -36,10 +36,11 @@ public class PlayerShootingThing : MonoBehaviour
     bool Isreloading;
     //NewObjectPoolerTest objectPooler;
     private void OnEnable()
-    {if (Grenade != true)
-        {
+    { 
+    //if (Grenade != true)
+    //    {
             PlayerUITracker.instance.PlayerAmmoUIUpdate(CurrentAmmo-1, MaxAmmo);
-        }
+        //}
     
     }
     private void Start()
