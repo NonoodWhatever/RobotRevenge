@@ -33,10 +33,10 @@ public class HeavyMeleeAttackMechanicism : MonoBehaviour
             if (IsPlayerInArea == true)
             {
                 if (PlayerHP != null)
-            { 
+             { 
                 PlayerHP.TakeDamage(-1);
                    
-            }
+             }
 
             }
             Timer = 1;

@@ -19,11 +19,11 @@ public class MainMenu : MonoBehaviour
     }
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu-New");
     }
     public void BackToLoadout()
     {
-        SceneManager.LoadScene("SelectionMenu");
+        SceneManager.LoadScene("SelectionMenu-New");
     }
     public void ExitGame()
     {
